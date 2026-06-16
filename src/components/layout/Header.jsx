@@ -1,5 +1,5 @@
 // src/components/layout/Header.jsx
-// Top header bar inside the app shell. Shows current user + sign out.
+// Top header bar. Uses display_name and initials from the profile.
 
 import { useNavigate } from 'react-router-dom'
 import { HStack, Box, Text, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Avatar, Button } from '@chakra-ui/react'
@@ -16,8 +16,9 @@ export default function Header() {
     navigate('/login/', { replace: true })
   }
 
-  const displayName = profile?.full_name || user?.email || 'User'
-  const dealershipName = dealership?.name || 'No dealership'
+  const displayName = profile?.display_name || profile?.full_name || user?.email?.split('@')[0] || 'User'
+  const initials = profile?.initials || displayName.slice(0, 2).toUpperCase()
+  const contextLabel = dealership?.name || (profile?.role === 'admin' ? 'Platform admin' : '')
 
   return (
     <Box
@@ -35,13 +36,13 @@ export default function Header() {
       zIndex={10}
     >
       <Text fontSize="sm" color="inkMuted">
-        {dealershipName}
+        {contextLabel}
       </Text>
 
       <Menu>
-        <MenuButton as={Button} variant="ghost" px={2} py={1} h="auto">
+        <MenuButton as={Button} variant="ghost" px={2} py={1} h="auto" borderRadius="pill">
           <HStack spacing={3}>
-            <Avatar size="sm" name={displayName} bg="brand.500" color="white" />
+            <Avatar size="sm" name={displayName} getInitials={() => initials} bg="brand.500" color="white" />
             <Box textAlign="left">
               <Text fontSize="sm" fontWeight={500} color="ink" lineHeight={1.2}>
                 {displayName}

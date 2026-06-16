@@ -1,18 +1,19 @@
 // src/pages/Login.jsx
-// Email + password login page. Redirects to /dashboard/ on success.
+// Centered card login. J|13 logo at top, two fields (username or email + password),
+// one button. Accepts either username or email via signInWithIdentifier.
 
 import { useState } from 'react'
 import { useNavigate, useLocation, Link as RouterLink } from 'react-router-dom'
 import {
-  Box, Container, Heading, Text, VStack, FormControl, FormLabel,
-  Input, Button, Alert, AlertIcon, Link, HStack
+  Box, Flex, Container, Text, VStack, FormControl, FormLabel,
+  Input, Button, Alert, AlertIcon, Link, Image, HStack
 } from '@chakra-ui/react'
-import { signInWithPassword } from '../lib/auth'
+import { signInWithIdentifier } from '../lib/auth'
 
 export default function Login() {
   const navigate = useNavigate()
   const location = useLocation()
-  const [email, setEmail] = useState('')
+  const [identifier, setIdentifier] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
@@ -21,7 +22,7 @@ export default function Login() {
     e.preventDefault()
     setError(null)
     setLoading(true)
-    const { error: signInError } = await signInWithPassword(email, password)
+    const { error: signInError } = await signInWithIdentifier(identifier, password)
     setLoading(false)
     if (signInError) {
       setError(signInError.message)
@@ -32,62 +33,87 @@ export default function Login() {
   }
 
   return (
-    <Box minH="100vh" display="flex" alignItems="center" justifyContent="center" bg="bg" px={6}>
-      <Container maxW="md">
-        <VStack align="stretch" spacing={8} bg="white" p={{ base: 8, md: 10 }} borderRadius="lg" border="1px solid" borderColor="line">
-          <VStack align="stretch" spacing={2}>
-            <Text fontFamily="display" fontSize="2xl" lineHeight={1} color="ink">
-              J|13 Dealer Academy
-            </Text>
-            <Text fontSize="sm" color="inkMuted">
-              Sign in to your dealership account.
+    <Flex minH="100vh" align="center" justify="center" bg="bg" px={6} py={12}>
+      <Container maxW="420px" px={0}>
+        <VStack align="stretch" spacing={8}>
+          <VStack spacing={6}>
+            <Box w="full" maxW="280px" mx="auto">
+              <Image
+                src="/j13-logo.png"
+                alt="J|13 Dealer Academy"
+                w="full"
+                h="auto"
+              />
+            </Box>
+            <Text fontSize="sm" color="inkMuted" textAlign="center">
+              Member platform for Janda Dealer Training.
             </Text>
           </VStack>
 
-          <form onSubmit={handleSubmit}>
-            <VStack align="stretch" spacing={4}>
-              {error && (
-                <Alert status="error" borderRadius="md" fontSize="sm">
-                  <AlertIcon />
-                  {error}
-                </Alert>
-              )}
+          <Box
+            bg="white"
+            borderRadius="card"
+            border="1px solid"
+            borderColor="line"
+            p={{ base: 7, md: 8 }}
+          >
+            <form onSubmit={handleSubmit}>
+              <VStack align="stretch" spacing={5}>
+                {error && (
+                  <Alert status="error" borderRadius="md" fontSize="sm" bg="red.50" color="red.800">
+                    <AlertIcon />
+                    {error}
+                  </Alert>
+                )}
 
-              <FormControl isRequired>
-                <FormLabel fontSize="sm">Email</FormLabel>
-                <Input
-                  type="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  placeholder="you@dealership.com"
-                  autoComplete="email"
-                />
-              </FormControl>
+                <FormControl isRequired>
+                  <FormLabel>Username or email</FormLabel>
+                  <Input
+                    type="text"
+                    value={identifier}
+                    onChange={(e) => setIdentifier(e.target.value)}
+                    placeholder="jjanda"
+                    autoComplete="username"
+                    autoCapitalize="none"
+                    spellCheck="false"
+                    size="md"
+                  />
+                </FormControl>
 
-              <FormControl isRequired>
-                <FormLabel fontSize="sm">Password</FormLabel>
-                <Input
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  autoComplete="current-password"
-                />
-              </FormControl>
+                <FormControl isRequired>
+                  <FormLabel>Password</FormLabel>
+                  <Input
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    autoComplete="current-password"
+                    size="md"
+                  />
+                </FormControl>
 
-              <Button type="submit" isLoading={loading} loadingText="Signing in" w="full" mt={2}>
-                Sign in
-              </Button>
-            </VStack>
-          </form>
+                <Button
+                  type="submit"
+                  isLoading={loading}
+                  loadingText="Signing in"
+                  size="md"
+                  mt={1}
+                >
+                  Sign in
+                </Button>
+              </VStack>
+            </form>
+          </Box>
 
-          <HStack justify="space-between" fontSize="sm">
-            <Link as={RouterLink} to="/signup/" color="brand.500">
-              Need an account?
+          <HStack justify="space-between" fontSize="sm" px={1}>
+            <Link as={RouterLink} to="/signup/" color="inkMuted">
+              Request access
             </Link>
-            <Text color="inkMuted">Forgot password</Text>
+            <Link href="#" color="inkMuted">
+              Forgot password
+            </Link>
           </HStack>
         </VStack>
       </Container>
-    </Box>
+    </Flex>
   )
 }

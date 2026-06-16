@@ -1,10 +1,9 @@
 // src/components/layout/Sidebar.jsx
-// Left sidebar nav for the Academy app shell.
-// Shows brand at top, then navigation by department area.
+// Left sidebar nav. Logo at top, then routes, then admin section if admin.
 
 import { NavLink, useLocation } from 'react-router-dom'
-import { Box, VStack, HStack, Text, Icon } from '@chakra-ui/react'
-import { LayoutDashboard, BookOpen, Settings, Shield } from 'lucide-react'
+import { Box, VStack, HStack, Text, Icon, Image } from '@chakra-ui/react'
+import { LayoutDashboard, BookOpen, Shield } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth'
 
 const NAV_ITEMS = [
@@ -58,12 +57,7 @@ export default function Sidebar() {
     >
       <VStack align="stretch" spacing={8}>
         <Box px={2}>
-          <Text fontFamily="display" fontSize="xl" lineHeight={1} color="ink">
-            J|13 Dealer
-          </Text>
-          <Text fontFamily="display" fontSize="xl" lineHeight={1} color="ink">
-            Academy
-          </Text>
+          <Image src="/j13-logo.png" alt="J|13 Dealer Academy" w="160px" h="auto" />
         </Box>
 
         <VStack align="stretch" spacing={1}>
