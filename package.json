@@ -1,0 +1,34 @@
+{
+  "name": "j13-dealer-academy",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "J|13 Dealer Academy. Member platform for Janda Dealer Training.",
+  "author": "Tyler Reagan <tyler@neonburro.com>",
+  "repository": "https://github.com/neonburro/academyjandatraining",
+  "license": "UNLICENSED",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.10.0",
+    "@emotion/react": "^11.13.0",
+    "@emotion/styled": "^11.13.0",
+    "@supabase/supabase-js": "^2.45.0",
+    "framer-motion": "^11.18.0",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-router-dom": "^6.28.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.4.0",
+    "vite": "^5.4.0"
+  }
+}
