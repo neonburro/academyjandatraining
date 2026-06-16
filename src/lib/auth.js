@@ -1,8 +1,6 @@
 // src/lib/auth.js
 // Auth helpers. signInWithIdentifier accepts either a username or an email.
-// If it contains an @, treat as email. Otherwise call the lookup-email
-// Netlify function to find the matching email server-side, then sign in
-// with that email.
+// Password reset uses Supabase's built-in flow with a custom redirect URL.
 
 import { supabase } from './supabase'
 
@@ -15,11 +13,9 @@ async function lookupEmailByUsername(username) {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ username }),
     })
-
     if (!response.ok) {
       return { email: null, error: 'Lookup failed' }
     }
-
     const data = await response.json()
     if (!data.found) {
       return { email: null, error: null }
@@ -38,7 +34,6 @@ export async function signInWithIdentifier(identifier, password) {
   }
 
   let email = trimmed
-
   if (!EMAIL_REGEX.test(trimmed)) {
     const { email: lookedUp, error: lookupError } = await lookupEmailByUsername(trimmed)
     if (lookupError) {
@@ -67,6 +62,24 @@ export async function signUpWithPassword(email, password, metadata = {}) {
     password,
     options: { data: metadata },
   })
+  return { data, error }
+}
+
+export async function sendPasswordReset(email) {
+  const trimmed = (email || '').trim()
+  if (!EMAIL_REGEX.test(trimmed)) {
+    return { error: { message: 'Please enter a valid email address.' } }
+  }
+
+  const redirectTo = `${window.location.origin}/reset-password/`
+  const { data, error } = await supabase.auth.resetPasswordForEmail(trimmed, {
+    redirectTo,
+  })
+  return { data, error }
+}
+
+export async function updatePassword(newPassword) {
+  const { data, error } = await supabase.auth.updateUser({ password: newPassword })
   return { data, error }
 }
 

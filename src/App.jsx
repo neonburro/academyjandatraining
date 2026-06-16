@@ -1,6 +1,6 @@
 // src/App.jsx
-// Top-level route definitions. Public routes (login, signup) and protected routes
-// (dashboard, courses, admin) are gated by ProtectedRoute.
+// Top-level routes. Public: /login/, /signup/, /reset-password/.
+// Protected: everything else inside AppShell.
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Box, Spinner, Center } from '@chakra-ui/react'
@@ -9,6 +9,7 @@ import ProtectedRoute from './components/auth/ProtectedRoute'
 import AppShell from './components/layout/AppShell'
 import Login from './pages/Login'
 import Signup from './pages/Signup'
+import ResetPassword from './pages/ResetPassword'
 import Dashboard from './pages/Dashboard'
 import Courses from './pages/Courses'
 import Admin from './pages/Admin'
@@ -29,6 +30,7 @@ export default function App() {
       <Routes>
         <Route path="/login/" element={<Login />} />
         <Route path="/signup/" element={<Signup />} />
+        <Route path="/reset-password/" element={<ResetPassword />} />
         <Route
           element={
             <ProtectedRoute>
