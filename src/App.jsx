@@ -1,6 +1,7 @@
 // src/App.jsx
 // Top-level routes. Public: /login/, /signup/, /reset-password/.
-// Protected: everything else inside AppShell.
+// Protected: dashboard and courses, inside AppShell.
+// Admin lives in the separate Pulse repo (pulse.jandatraining.com).
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Box, Spinner, Center } from '@chakra-ui/react'
@@ -12,7 +13,6 @@ import Signup from './pages/Signup'
 import ResetPassword from './pages/ResetPassword'
 import Dashboard from './pages/Dashboard'
 import Courses from './pages/Courses'
-import Admin from './pages/Admin'
 
 export default function App() {
   const { loading } = useAuth()
@@ -41,7 +41,6 @@ export default function App() {
           <Route path="/" element={<Navigate to="/dashboard/" replace />} />
           <Route path="/dashboard/" element={<Dashboard />} />
           <Route path="/courses/" element={<Courses />} />
-          <Route path="/admin/" element={<Admin />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

@@ -1,18 +1,14 @@
 // src/components/layout/Sidebar.jsx
-// Left sidebar nav. Logo at top, then routes, then admin section if admin.
+// Left sidebar nav. Logo at top, dealer-facing nav items. Admin lives in the
+// separate Pulse repo (pulse.jandatraining.com), not in the customer Academy.
 
 import { NavLink, useLocation } from 'react-router-dom'
 import { Box, VStack, HStack, Text, Icon, Image } from '@chakra-ui/react'
-import { LayoutDashboard, BookOpen, Shield } from 'lucide-react'
-import { useAuth } from '../../hooks/useAuth'
+import { LayoutDashboard, BookOpen } from 'lucide-react'
 
 const NAV_ITEMS = [
   { to: '/dashboard/', label: 'Dashboard', icon: LayoutDashboard },
   { to: '/courses/', label: 'Courses', icon: BookOpen },
-]
-
-const ADMIN_ITEMS = [
-  { to: '/admin/', label: 'Admin', icon: Shield },
 ]
 
 function NavItem({ to, label, icon: IconComponent }) {
@@ -40,8 +36,6 @@ function NavItem({ to, label, icon: IconComponent }) {
 }
 
 export default function Sidebar() {
-  const { isAdmin } = useAuth()
-
   return (
     <Box
       as="aside"
@@ -65,19 +59,6 @@ export default function Sidebar() {
             <NavItem key={item.to} {...item} />
           ))}
         </VStack>
-
-        {isAdmin && (
-          <Box>
-            <Text fontSize="xs" fontWeight={600} color="inkDim" px={4} mb={2} letterSpacing="0.05em">
-              ADMIN
-            </Text>
-            <VStack align="stretch" spacing={1}>
-              {ADMIN_ITEMS.map((item) => (
-                <NavItem key={item.to} {...item} />
-              ))}
-            </VStack>
-          </Box>
-        )}
       </VStack>
     </Box>
   )
