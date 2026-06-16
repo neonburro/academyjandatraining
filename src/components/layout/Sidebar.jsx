@@ -1,14 +1,17 @@
 // src/components/layout/Sidebar.jsx
-// Left sidebar nav. Logo at top, dealer-facing nav items. Admin lives in the
-// separate Pulse repo (pulse.jandatraining.com), not in the customer Academy.
+// Left sidebar nav. Logo at top, dealer-facing nav: Dashboard, Calendar,
+// Team, Courses, Insights. Admin lives in the separate Pulse repo.
 
 import { NavLink, useLocation } from 'react-router-dom'
 import { Box, VStack, HStack, Text, Icon, Image } from '@chakra-ui/react'
-import { LayoutDashboard, BookOpen } from 'lucide-react'
+import { LayoutDashboard, Calendar, Users, BookOpen, Sparkles } from 'lucide-react'
 
 const NAV_ITEMS = [
-  { to: '/dashboard/', label: 'Dashboard', icon: LayoutDashboard },
+  { to: '/dashboard/', label: 'Today', icon: LayoutDashboard },
+  { to: '/calendar/', label: 'Calendar', icon: Calendar },
+  { to: '/team/', label: 'Team', icon: Users },
   { to: '/courses/', label: 'Courses', icon: BookOpen },
+  { to: '/insights/', label: 'Insights', icon: Sparkles },
 ]
 
 function NavItem({ to, label, icon: IconComponent }) {
