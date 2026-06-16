@@ -1,6 +1,7 @@
 // src/pages/Login.jsx
-// Centered card login. J|13 logo at top, two fields (username or email + password),
-// one button. Accepts either username or email via signInWithIdentifier.
+// Centered card login. J|13 logo + "DEALER ACADEMY" wordmark at top, two
+// fields (username or email + password), one button. Accepts either via
+// signInWithIdentifier. Credit line sits below as a quiet signature.
 
 import { useState } from 'react'
 import { useNavigate, useLocation, Link as RouterLink } from 'react-router-dom'
@@ -36,17 +37,23 @@ export default function Login() {
     <Flex minH="100vh" align="center" justify="center" bg="bg" px={6} py={12}>
       <Container maxW="420px" px={0}>
         <VStack align="stretch" spacing={8}>
-          <VStack spacing={6}>
-            <Box w="full" maxW="280px" mx="auto">
+          <VStack spacing={3}>
+            <Box w="full" maxW="240px" mx="auto">
               <Image
                 src="/j13-logo.png"
-                alt="J|13 Dealer Academy"
+                alt="J|13"
                 w="full"
                 h="auto"
               />
             </Box>
-            <Text fontSize="sm" color="inkMuted" textAlign="center">
-              Member platform for Janda Dealer Training.
+            <Text
+              fontSize="xs"
+              fontWeight={600}
+              color="inkMuted"
+              letterSpacing="0.18em"
+              textTransform="uppercase"
+            >
+              Dealer Academy
             </Text>
           </VStack>
 
@@ -104,14 +111,20 @@ export default function Login() {
             </form>
           </Box>
 
-          <HStack justify="space-between" fontSize="sm" px={1}>
-            <Link as={RouterLink} to="/signup/" color="inkMuted">
-              Request access
-            </Link>
-            <Link href="#" color="inkMuted">
-              Forgot password
-            </Link>
-          </HStack>
+          <VStack spacing={5}>
+            <HStack justify="space-between" w="full" fontSize="sm" px={1}>
+              <Link as={RouterLink} to="/signup/" color="inkMuted">
+                Request access
+              </Link>
+              <Link href="#" color="inkMuted">
+                Forgot password
+              </Link>
+            </HStack>
+
+            <Text fontSize="xs" color="inkDim" textAlign="center" fontStyle="italic">
+              Built by Janda Dealer Training.
+            </Text>
+          </VStack>
         </VStack>
       </Container>
     </Flex>
