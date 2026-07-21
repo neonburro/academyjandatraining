@@ -1,6 +1,7 @@
 // src/App.jsx
 // Top-level routes. Public: /login/, /signup/, /reset-password/.
-// Protected: /dashboard/, /calendar/, /team/, /courses/, /insights/.
+// Protected: /dashboard/, /courses/, /calendar/, /team/, /settings/.
+// Insights folded into the dashboard AI coach and removed as a route.
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Box, Spinner, Center } from '@chakra-ui/react'
@@ -14,7 +15,7 @@ import Dashboard from './pages/Dashboard'
 import CalendarPage from './pages/Calendar'
 import Team from './pages/Team'
 import Courses from './pages/Courses'
-import Insights from './pages/Insights'
+import Settings from './pages/Settings'
 
 export default function App() {
   const { loading } = useAuth()
@@ -22,7 +23,7 @@ export default function App() {
   if (loading) {
     return (
       <Center minH="100vh" bg="bg">
-        <Spinner size="lg" color="brand.500" thickness="3px" />
+        <Spinner size="lg" color="ink" thickness="3px" />
       </Center>
     )
   }
@@ -42,10 +43,10 @@ export default function App() {
         >
           <Route path="/" element={<Navigate to="/dashboard/" replace />} />
           <Route path="/dashboard/" element={<Dashboard />} />
+          <Route path="/courses/" element={<Courses />} />
           <Route path="/calendar/" element={<CalendarPage />} />
           <Route path="/team/" element={<Team />} />
-          <Route path="/courses/" element={<Courses />} />
-          <Route path="/insights/" element={<Insights />} />
+          <Route path="/settings/" element={<Settings />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>

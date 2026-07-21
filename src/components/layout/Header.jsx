@@ -1,9 +1,10 @@
 // src/components/layout/Header.jsx
-// Top header bar. Uses display_name and initials from the profile.
+// Top header bar. Avatar menu (top right): Account settings + Sign out.
+// Uses display_name and initials from the profile. Black avatar.
 
 import { useNavigate } from 'react-router-dom'
 import { HStack, Box, Text, Menu, MenuButton, MenuList, MenuItem, MenuDivider, Avatar, Button } from '@chakra-ui/react'
-import { LogOut, User } from 'lucide-react'
+import { LogOut, Settings as SettingsIcon } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth'
 import { signOut } from '../../lib/auth'
 
@@ -40,9 +41,9 @@ export default function Header() {
       </Text>
 
       <Menu>
-        <MenuButton as={Button} variant="ghost" px={2} py={1} h="auto" borderRadius="pill">
+        <MenuButton as={Button} variant="ghost" px={2} py={1} h="auto" borderRadius="pill" _hover={{ bg: 'surface' }}>
           <HStack spacing={3}>
-            <Avatar size="sm" name={displayName} getInitials={() => initials} bg="brand.500" color="white" />
+            <Avatar size="sm" name={displayName} getInitials={() => initials} bg="ink" color="white" />
             <Box textAlign="left">
               <Text fontSize="sm" fontWeight={500} color="ink" lineHeight={1.2}>
                 {displayName}
@@ -56,7 +57,9 @@ export default function Header() {
           </HStack>
         </MenuButton>
         <MenuList>
-          <MenuItem icon={<User size={16} />}>Profile</MenuItem>
+          <MenuItem icon={<SettingsIcon size={16} />} onClick={() => navigate('/settings/')}>
+            Account settings
+          </MenuItem>
           <MenuDivider />
           <MenuItem icon={<LogOut size={16} />} onClick={handleSignOut}>
             Sign out

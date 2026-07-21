@@ -1,6 +1,10 @@
 // src/lib/auth.js
 // Auth helpers. signInWithIdentifier accepts either a username or an email.
 // Password reset uses Supabase's built-in flow with a custom redirect URL.
+//
+// (2026-07-21) Added verifyCurrentPassword and changeEmail to power the
+// Settings page: re-verify the current password before sensitive changes,
+// and change the account email (Supabase confirms via the new address).
 
 import { supabase } from './supabase'
 
@@ -80,6 +84,36 @@ export async function sendPasswordReset(email) {
 
 export async function updatePassword(newPassword) {
   const { data, error } = await supabase.auth.updateUser({ password: newPassword })
+  return { data, error }
+}
+
+// Verify the current password by attempting a silent re-auth with the account's
+// own email. Returns { ok, error }. Used to unlock sensitive Settings actions
+// (change email, change password) so a walk-up cannot change them.
+export async function verifyCurrentPassword(currentPassword) {
+  const { data: { user } } = await supabase.auth.getUser()
+  if (!user?.email) {
+    return { ok: false, error: { message: 'Not signed in.' } }
+  }
+  const { error } = await supabase.auth.signInWithPassword({
+    email: user.email,
+    password: currentPassword,
+  })
+  if (error) {
+    return { ok: false, error: { message: 'Current password is incorrect.' } }
+  }
+  return { ok: true, error: null }
+}
+
+// Change email. Supabase sends a confirmation link to the NEW address; the
+// change only takes effect once the user clicks it. Callers should verify the
+// current password first (see verifyCurrentPassword).
+export async function changeEmail(newEmail) {
+  const trimmed = (newEmail || '').trim().toLowerCase()
+  if (!EMAIL_REGEX.test(trimmed)) {
+    return { data: null, error: { message: 'Please enter a valid email address.' } }
+  }
+  const { data, error } = await supabase.auth.updateUser({ email: trimmed })
   return { data, error }
 }
 

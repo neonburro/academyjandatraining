@@ -1,17 +1,16 @@
 // src/components/layout/Sidebar.jsx
-// Left sidebar nav. Logo at top, dealer-facing nav: Dashboard, Calendar,
-// Team, Courses, Insights. Admin lives in the separate Pulse repo.
+// Left sidebar nav. Logo at top, four clean items: Today, Courses, Calendar,
+// Team. Insights folded into the dashboard AI coach. Clean black active state.
 
 import { NavLink, useLocation } from 'react-router-dom'
 import { Box, VStack, HStack, Text, Icon, Image } from '@chakra-ui/react'
-import { LayoutDashboard, Calendar, Users, BookOpen, Sparkles } from 'lucide-react'
+import { LayoutDashboard, BookOpen, Calendar, Users } from 'lucide-react'
 
 const NAV_ITEMS = [
   { to: '/dashboard/', label: 'Today', icon: LayoutDashboard },
+  { to: '/courses/', label: 'Courses', icon: BookOpen },
   { to: '/calendar/', label: 'Calendar', icon: Calendar },
   { to: '/team/', label: 'Team', icon: Users },
-  { to: '/courses/', label: 'Courses', icon: BookOpen },
-  { to: '/insights/', label: 'Insights', icon: Sparkles },
 ]
 
 function NavItem({ to, label, icon: IconComponent }) {
@@ -23,9 +22,9 @@ function NavItem({ to, label, icon: IconComponent }) {
         px={4}
         py={2.5}
         borderRadius="md"
-        bg={isActive ? 'surface' : 'transparent'}
-        color={isActive ? 'ink' : 'inkMuted'}
-        _hover={{ bg: 'surface', color: 'ink' }}
+        bg={isActive ? 'ink' : 'transparent'}
+        color={isActive ? 'white' : 'inkMuted'}
+        _hover={{ bg: isActive ? 'ink' : 'surface', color: isActive ? 'white' : 'ink' }}
         transition="all 150ms"
         spacing={3}
       >
@@ -54,7 +53,7 @@ export default function Sidebar() {
     >
       <VStack align="stretch" spacing={8}>
         <Box px={2}>
-          <Image src="/j13-logo.png" alt="J|13 Dealer Academy" w="160px" h="auto" />
+          <Image src="/j13-logo.png" alt="J13 Dealer Academy" w="150px" h="auto" />
         </Box>
 
         <VStack align="stretch" spacing={1}>
