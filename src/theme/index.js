@@ -1,7 +1,19 @@
 // src/theme/index.js
-// Chakra UI v2 theme. Tokens ported from the marketing site's tokens.css so
-// the Academy shares the same brand DNA. Display sizes scaled down 15-20%
-// from marketing since this is an operational app, not a storytelling site.
+// Chakra UI v2 theme. Clean black-on-light system for a daily-use
+// operational tool (the J13 Dealer Academy). Black is the primary
+// (buttons, active states, key UI). Soft gray stays for helper and
+// secondary text so it reads calm and never fatiguing. Red is
+// reserved for tiny highlights only.
+//
+// Design intent: dealers and their sales teams log in every day.
+// The interface should be crisp, quiet, fast to read, and premium.
+// Black and white with a whisper of oxblood. Shares brand DNA with
+// the marketing site but tuned for an app, not a storytelling page.
+//
+// NOTE: the `brand` scale is now an INK ramp (black), so every
+// existing brand.500 usage (buttons, icons, active states) renders
+// black instead of blue with no per-file changes. Red lives in the
+// separate `accent` token, used sparingly.
 
 import { extendTheme } from '@chakra-ui/react'
 
@@ -21,19 +33,30 @@ const colors = {
   lineStrong: 'rgba(10, 10, 10, 0.16)',
   lineOnDark: 'rgba(255, 255, 255, 0.10)',
   lineStrongOnDark: 'rgba(255, 255, 255, 0.20)',
+
+  // brand = INK ramp. Primary UI is black. brand.500 is the base
+  // used by buttons/icons/active states across the app.
   brand: {
-    50: '#E5F0FA',
-    100: '#B8D6F2',
-    200: '#8ABDEB',
-    300: '#5DA3E3',
-    400: '#308ADC',
-    500: '#0066CC',
-    600: '#003E7E',
-    700: '#002C5C',
-    800: '#001A39',
-    900: '#000917',
+    50: '#F2F2F2',
+    100: '#D9D9D9',
+    200: '#B3B3B3',
+    300: '#808080',
+    400: '#333333',
+    500: '#0A0A0A',
+    600: '#000000',
+    700: '#000000',
+    800: '#000000',
+    900: '#000000',
   },
-  blueSoft: 'rgba(0, 102, 204, 0.08)',
+  inkSoft: 'rgba(10, 10, 10, 0.05)',
+
+  // red accent. TINY HIGHLIGHTS ONLY. Oxblood from the J13 cover art.
+  accent: {
+    500: '#9B2D2D',
+    600: '#7A2323',
+    soft: 'rgba(155, 45, 45, 0.08)',
+  },
+
   gold: '#C9A24B',
   goldSoft: 'rgba(201, 162, 75, 0.10)',
   success: '#1B8845',
@@ -66,7 +89,7 @@ const styles = {
       textRendering: 'optimizeLegibility',
     },
     '::selection': {
-      background: 'brand.500',
+      background: 'ink',
       color: 'white',
     },
     'code, kbd, pre, samp': {
@@ -85,10 +108,10 @@ const components = {
     },
     variants: {
       solid: {
-        bg: 'brand.500',
+        bg: 'ink',
         color: 'white',
-        _hover: { bg: 'brand.600', _disabled: { bg: 'brand.500' } },
-        _active: { bg: 'brand.700' },
+        _hover: { bg: 'ink2', _disabled: { bg: 'ink' } },
+        _active: { bg: 'black' },
       },
       outline: {
         borderColor: 'lineStrong',
@@ -98,6 +121,13 @@ const components = {
       ghost: {
         color: 'ink',
         _hover: { bg: 'surface' },
+      },
+      // tiny-highlight accent button, use sparingly
+      accent: {
+        bg: 'accent.500',
+        color: 'white',
+        _hover: { bg: 'accent.600' },
+        _active: { bg: 'accent.600' },
       },
     },
     defaultProps: { variant: 'solid', size: 'md' },
@@ -111,8 +141,8 @@ const components = {
           bg: 'white',
           _hover: { borderColor: 'inkMuted' },
           _focus: {
-            borderColor: 'brand.500',
-            boxShadow: '0 0 0 1px var(--chakra-colors-brand-500)',
+            borderColor: 'ink',
+            boxShadow: '0 0 0 1px var(--chakra-colors-ink)',
           },
           _placeholder: { color: 'inkDim' },
         },
@@ -125,6 +155,7 @@ const components = {
       fontFamily: 'display',
       fontWeight: 600,
       letterSpacing: '-0.02em',
+      color: 'ink',
     },
   },
   FormLabel: {
