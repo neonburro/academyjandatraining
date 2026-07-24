@@ -1,20 +1,38 @@
 // src/pages/ResetPassword.jsx
-// Where users land from the password reset email link. Supabase's SDK
-// auto-detects the recovery token in the URL hash and treats the user as
-// temporarily authenticated for one password change.
+// Where users land from the password reset email link.
+//
+// FIX (2026-07-23): the old version set `ready = true` on an unconditional
+// 1500ms timeout, so the Update button enabled whether or not a recovery
+// session actually existed. Users then submitted into a void and got the raw
+// Supabase error "Auth session missing!" with no idea what to do.
+//
+// Now the page resolves into one of three explicit states:
+//   checking  -> still looking for a session
+//   ready     -> a real recovery session exists, form is usable
+//   invalid   -> no session, so show a plain-language explanation and a
+//                path back to request a fresh link. The form is not shown.
+//
+// Session detection is belt and braces: supabase detectSessionInUrl fires
+// PASSWORD_RECOVERY / SIGNED_IN, and we also call getCurrentSession() directly
+// in case the event fired before this component mounted. If a token_hash is
+// present in the query string (the newer Supabase recovery flow) we redeem it
+// explicitly with verifyOtp, which survives redirects better than URL hashes.
 //
 // UI matches the login page: placeholder-only fields, eye icon on both
 // password inputs, brand wordmark at top, quiet signature at bottom.
 
 import { useState, useEffect } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Link as RouterLink } from 'react-router-dom'
 import {
   Box, Flex, Container, Text, VStack,
   Input, InputGroup, InputRightElement, IconButton,
-  Button, Alert, AlertIcon, Image
+  Button, Alert, AlertIcon, Image, Spinner, Link
 } from '@chakra-ui/react'
 import { Eye, EyeOff } from 'lucide-react'
-import { updatePassword, onAuthStateChange } from '../lib/auth'
+import { updatePassword, onAuthStateChange, getCurrentSession } from '../lib/auth'
+import { supabase } from '../lib/supabase'
+
+const STATE = { CHECKING: 'checking', READY: 'ready', INVALID: 'invalid' }
 
 export default function ResetPassword() {
   const navigate = useNavigate()
@@ -25,18 +43,74 @@ export default function ResetPassword() {
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [success, setSuccess] = useState(false)
-  const [ready, setReady] = useState(false)
+  const [status, setStatus] = useState(STATE.CHECKING)
 
   useEffect(() => {
-    const { data: { subscription } } = onAuthStateChange((event) => {
-      if (event === 'PASSWORD_RECOVERY' || event === 'SIGNED_IN') {
-        setReady(true)
+    let settled = false
+    let timer = null
+
+    const markReady = () => {
+      if (settled) return
+      settled = true
+      if (timer) clearTimeout(timer)
+      setStatus(STATE.READY)
+    }
+
+    const markInvalid = () => {
+      if (settled) return
+      settled = true
+      if (timer) clearTimeout(timer)
+      setStatus(STATE.INVALID)
+    }
+
+    // 1. Listen for the SDK detecting the recovery token in the URL.
+    const { data: { subscription } } = onAuthStateChange((event, session) => {
+      if ((event === 'PASSWORD_RECOVERY' || event === 'SIGNED_IN') && session) {
+        markReady()
       }
     })
-    const timer = setTimeout(() => setReady(true), 1500)
+
+    // 2. Also resolve directly, in case the event fired before mount, or in
+    //    case the link used the newer token_hash query param flow.
+    const resolve = async () => {
+      const existing = await getCurrentSession()
+      if (existing) {
+        markReady()
+        return
+      }
+
+      // Newer Supabase recovery links carry ?token_hash=...&type=recovery
+      const params = new URLSearchParams(window.location.search)
+      const tokenHash = params.get('token_hash')
+      const type = params.get('type')
+
+      if (tokenHash && type) {
+        const { data, error: verifyError } = await supabase.auth.verifyOtp({
+          token_hash: tokenHash,
+          type,
+        })
+        if (data?.session && !verifyError) {
+          markReady()
+          return
+        }
+      }
+
+      // Give detectSessionInUrl a moment to finish parsing the hash, then give up.
+      timer = setTimeout(async () => {
+        const late = await getCurrentSession()
+        if (late) {
+          markReady()
+        } else {
+          markInvalid()
+        }
+      }, 2500)
+    }
+
+    resolve()
+
     return () => {
       subscription.unsubscribe()
-      clearTimeout(timer)
+      if (timer) clearTimeout(timer)
     }
   }, [])
 
@@ -56,15 +130,28 @@ export default function ResetPassword() {
       return
     }
 
+    // Re-check the session immediately before writing, so a session that
+    // expired while the form sat open produces a clear message.
+    const session = await getCurrentSession()
+    if (!session) {
+      setStatus(STATE.INVALID)
+      return
+    }
+
     setLoading(true)
     const { error: updateError } = await updatePassword(password)
     setLoading(false)
 
     if (updateError) {
+      const msg = updateError.message || ''
+      if (msg.toLowerCase().includes('session')) {
+        setStatus(STATE.INVALID)
+        return
+      }
       setError(
-        updateError.message?.includes('expired')
+        msg.includes('expired')
           ? 'This reset link has expired. Request a new one from the login page.'
-          : updateError.message || 'Could not update password. The reset link may have expired.'
+          : msg || 'Could not update password. Please request a new reset link.'
       )
       return
     }
@@ -98,7 +185,33 @@ export default function ResetPassword() {
             borderColor="line"
             p={{ base: 7, md: 8 }}
           >
-            {success ? (
+            {status === STATE.CHECKING ? (
+              <VStack spacing={4} py={4}>
+                <Spinner size="md" color="inkMuted" thickness="2px" />
+                <Text fontSize="sm" color="inkMuted">
+                  Checking your reset link.
+                </Text>
+              </VStack>
+            ) : status === STATE.INVALID ? (
+              <VStack align="stretch" spacing={5}>
+                <Text fontSize="sm" fontWeight={600} color="ink">
+                  This reset link is no longer valid.
+                </Text>
+                <Text fontSize="sm" color="inkMuted" lineHeight={1.6}>
+                  Reset links work once and expire after one hour. This one was already
+                  used, has expired, or was opened in a different browser than the one
+                  that requested it.
+                </Text>
+                <Text fontSize="sm" color="inkMuted" lineHeight={1.6}>
+                  Request a new link from the login page. Open it in the same browser,
+                  and if your email app previews links, copy the link and paste it into
+                  your browser instead of tapping it.
+                </Text>
+                <Button as={RouterLink} to="/login/" size="md">
+                  Back to login
+                </Button>
+              </VStack>
+            ) : success ? (
               <VStack align="stretch" spacing={4}>
                 <Alert status="success" borderRadius="md" fontSize="sm">
                   <AlertIcon />
@@ -189,11 +302,11 @@ export default function ResetPassword() {
                     type="submit"
                     isLoading={loading}
                     loadingText="Updating"
-                    isDisabled={!ready || !passwordsMatch || password.length < 8}
+                    isDisabled={!passwordsMatch || password.length < 8}
                     size="md"
                     mt={2}
                   >
-                    {ready ? 'Update password' : 'Loading...'}
+                    Update password
                   </Button>
                 </VStack>
               </form>
