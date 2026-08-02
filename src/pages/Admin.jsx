@@ -24,10 +24,15 @@ const CHECKLIST = [
     detail: 'The coach function is deployed and grounded in the J13 method.',
   },
   {
+    done: true,
+    title: 'Database live and seeded',
+    detail: '13 steps and 52 knowledge checks in production. Member progress now syncs to Supabase automatically.',
+  },
+  {
     done: false,
     icon: Database,
-    title: 'Run migrations 0003 and 0004',
-    detail: 'Paste supabase/migrations/0003 then 0004 into the SQL editor. Progress then syncs to the database automatically.',
+    title: 'Set display names for Jazz and JJ',
+    detail: 'Run the batch 6 SQL (profile fields plus usernames) so greetings and the team board show real names.',
     href: 'https://supabase.com/dashboard/project/fiowfatqsqagehngburd/sql/new',
     action: 'Open SQL editor',
   },

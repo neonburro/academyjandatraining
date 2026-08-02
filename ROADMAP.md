@@ -27,8 +27,12 @@ The 13-step Roadmap to the Sale becomes the heart of the app, extracted verbatim
 
 Progress becomes real data a manager can inspect.
 
-- [ ] Tyler runs migrations 0003 then 0004 against fiowfatqsqagehngburd (SQL editor), or
-      re-scopes the Supabase MCP connector to the Janda org so Claude can run them
+- [x] Migrations 0003 + 0004 ran against fiowfatqsqagehngburd on 2026-08-02 (SQL editor,
+      5 batches): 8 tables, RLS, 13 steps and 52 questions verified live
+- [ ] Batch 6: profile fields + display names + usernames for Jazz and JJ (on Tyler's clipboard,
+      needs JJ's real name filled in)
+- [ ] ANTHROPIC_API_KEY into Netlify env, then redeploy (Coach goes live)
+- [ ] Real sbp_ token into .mcp.json so Claude sessions get direct DB access
 - [x] Progress store write-through + login hydration wired (progressRemote.js); localStorage
       stays the sync cache, Supabase is the durable copy, auto-detects when 0003 is live
 - [x] Seed migration 0004 generated from src/content (13 steps, 52 questions, idempotent)
