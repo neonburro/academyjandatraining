@@ -12,7 +12,7 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import {
-  Box, Flex, HStack, VStack, Text, Button, Icon, Radio, RadioGroup, Textarea,
+  Box, Flex, HStack, Stack, VStack, Text, Button, Icon, Radio, RadioGroup, Textarea,
   useToast,
 } from '@chakra-ui/react'
 import { ArrowLeft, ArrowRight, Check, MessageCircle, Quote } from 'lucide-react'
@@ -210,7 +210,7 @@ function CommitmentGate({ step, userId, nextStep }) {
           </HStack>
         </>
       ) : (
-        <HStack pt={2}>
+        <Stack pt={2} direction={{ base: 'column', sm: 'row' }} align={{ base: 'stretch', sm: 'center' }} spacing={2}>
           {nextStep ? (
             <Button rightIcon={<ArrowRight size={16} />} onClick={() => navigate(`/courses/roadmap/${nextStep.slug}/`)}>
               Next: {nextStep.title}
@@ -221,7 +221,7 @@ function CommitmentGate({ step, userId, nextStep }) {
           <Button variant="ghost" onClick={() => navigate('/courses/roadmap/')}>
             Back to Roadmap
           </Button>
-        </HStack>
+        </Stack>
       )}
     </SectionCard>
   )

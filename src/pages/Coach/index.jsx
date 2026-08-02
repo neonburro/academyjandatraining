@@ -22,7 +22,7 @@ import { sendToCoach, loadTranscript, saveTranscript, clearTranscript } from '..
 const SUGGESTIONS = [
   'Quiz me on my current step',
   'Role-play a customer with me',
-  'Run the objection loop on "I need to think about it"',
+  'Practice handling "I need to think about it"',
   'What should I work on today?',
 ]
 
