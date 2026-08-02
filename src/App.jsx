@@ -29,7 +29,9 @@ import Team from './pages/Team'
 import Courses from './pages/Courses'
 import Roadmap from './pages/Roadmap'
 import StepDetail from './pages/Roadmap/StepDetail'
+import Reference from './pages/Roadmap/Reference'
 import Coach from './pages/Coach'
+import Admin from './pages/Admin'
 import Settings from './pages/Settings'
 
 export default function App() {
@@ -77,7 +79,16 @@ export default function App() {
           <Route path="/courses/" element={<Courses />} />
           <Route path="/courses/roadmap/" element={<Roadmap />} />
           <Route path="/courses/roadmap/:slug/" element={<StepDetail />} />
+          <Route path="/courses/reference/" element={<Reference />} />
           <Route path="/coach/" element={<Coach />} />
+          <Route
+            path="/admin/"
+            element={
+              <ProtectedRoute requireAdmin>
+                <Admin />
+              </ProtectedRoute>
+            }
+          />
           <Route path="/calendar/" element={<CalendarPage />} />
           <Route path="/team/" element={<Team />} />
           <Route path="/settings/" element={<Settings />} />

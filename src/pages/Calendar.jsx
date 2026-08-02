@@ -160,6 +160,71 @@ function EventDetail({ event, onClose }) {
   )
 }
 
+function AgendaList({ onEventClick }) {
+  const now = new Date()
+  const upcoming = SEED_EVENTS
+    .filter((e) => new Date(e.endAt) >= now)
+    .sort((a, b) => new Date(a.startAt) - new Date(b.startAt))
+
+  if (upcoming.length === 0) {
+    return (
+      <Box bg="white" border="1px dashed" borderColor="lineStrong" borderRadius="card" p={8} textAlign="center">
+        <Text fontSize="sm" color="inkMuted">
+          Nothing scheduled yet. Group coaching calls and live sessions land here.
+        </Text>
+      </Box>
+    )
+  }
+
+  return (
+    <VStack align="stretch" spacing={3}>
+      {upcoming.map((event) => {
+        const meta = EVENT_TYPES[event.type]
+        const start = new Date(event.startAt)
+        return (
+          <HStack
+            key={event.id}
+            bg="white"
+            border="1px solid"
+            borderColor="line"
+            borderRadius="card"
+            p={4}
+            spacing={4}
+            cursor="pointer"
+            onClick={() => onEventClick(event)}
+            _hover={{ borderColor: 'lineStrong' }}
+            transition="border-color 150ms"
+            align="flex-start"
+          >
+            <VStack spacing={0} w="52px" flexShrink={0} bg="surface" borderRadius="input" py={2}>
+              <Text fontSize="mono-xs" fontFamily="mono" textTransform="uppercase" color="inkMuted">
+                {start.toLocaleDateString('en-US', { month: 'short' })}
+              </Text>
+              <Text fontSize="lg" fontWeight={700} lineHeight={1.1}>
+                {start.getDate()}
+              </Text>
+            </VStack>
+            <Box flex={1} minW={0}>
+              <HStack spacing={2} mb={1}>
+                <Box w={1.5} h={1.5} borderRadius="full" bg={meta.color} flexShrink={0} />
+                <Text fontSize="mono-xs" fontFamily="mono" textTransform="uppercase" letterSpacing="0.06em" color="inkMuted">
+                  {meta.label}
+                </Text>
+              </HStack>
+              <Text fontWeight={600} fontSize="sm" noOfLines={2} letterSpacing="-0.01em">
+                {event.title}
+              </Text>
+              <Text fontSize="xs" color="inkMuted" mt={0.5}>
+                {formatEventTime(event.startAt)} - {formatEventTime(event.endAt)}
+              </Text>
+            </Box>
+          </HStack>
+        )
+      })}
+    </VStack>
+  )
+}
+
 export default function CalendarPage() {
   const today = new Date()
   const [viewYear, setViewYear] = useState(today.getFullYear())
@@ -215,11 +280,14 @@ export default function CalendarPage() {
           <Text fontSize="xs" color="inkMuted" letterSpacing="0.08em" textTransform="uppercase" mb={1}>
             Academy calendar
           </Text>
-          <Heading fontSize="display-md" fontWeight={500} color="ink">
+          <Heading fontSize="display-md" fontWeight={500} color="ink" display={{ base: 'none', md: 'block' }}>
             {monthLabel}
           </Heading>
+          <Heading fontSize="display-md" fontWeight={500} color="ink" display={{ base: 'block', md: 'none' }}>
+            Upcoming
+          </Heading>
         </Box>
-        <HStack spacing={3}>
+        <HStack spacing={3} display={{ base: 'none', md: 'flex' }}>
           <Button variant="outline" size="sm" onClick={handleToday}>
             Today
           </Button>
@@ -242,6 +310,11 @@ export default function CalendarPage() {
         </HStack>
       </Flex>
 
+      {/* mobile: agenda list instead of a cramped 7-column grid */}
+      <Box display={{ base: 'block', md: 'none' }}>
+        <AgendaList onEventClick={handleEventClick} />
+      </Box>
+
       <Box
         border="1px solid"
         borderColor="line"
@@ -249,6 +322,7 @@ export default function CalendarPage() {
         overflow="hidden"
         bg="white"
         flex={1}
+        display={{ base: 'none', md: 'block' }}
       >
         <Flex bg="surface" borderBottom="1px solid" borderColor="line">
           {DAY_NAMES.map((day) => (
@@ -313,7 +387,7 @@ export default function CalendarPage() {
         </Box>
       </Box>
 
-      <HStack spacing={5} mt={5} flexWrap="wrap">
+      <HStack spacing={5} mt={5} flexWrap="wrap" display={{ base: 'none', md: 'flex' }}>
         {Object.entries(EVENT_TYPES).map(([key, meta]) => (
           <HStack key={key} spacing={2}>
             <Box w={2} h={2} borderRadius="full" bg={meta.color} />

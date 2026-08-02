@@ -10,7 +10,7 @@
 import { useMemo } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { Box, Flex, HStack, VStack, Text, Icon, Progress, Button } from '@chakra-ui/react'
-import { ArrowRight, Landmark, Map, Users } from 'lucide-react'
+import { ArrowRight, BookMarked, Landmark, Map, Users } from 'lucide-react'
 import { useAuth } from '../hooks/useAuth'
 import { getProgress } from '../lib/progressStore'
 
@@ -99,6 +99,34 @@ export default function Courses() {
           </HStack>
         </HStack>
       </Box>
+
+      {/* Quick reference, live now */}
+      <HStack
+        bg="white"
+        border="1px solid"
+        borderColor="line"
+        borderRadius="card"
+        p={5}
+        spacing={4}
+        cursor="pointer"
+        onClick={() => navigate('/courses/reference/')}
+        transition="all 150ms"
+        _hover={{ borderColor: 'lineStrong', transform: 'translateY(-1px)' }}
+        role="group"
+      >
+        <Flex boxSize="40px" borderRadius="full" bg="accent.soft" align="center" justify="center" flexShrink={0}>
+          <Icon as={BookMarked} boxSize={4} color="accent.500" />
+        </Flex>
+        <Box flex={1}>
+          <Text fontWeight={600} letterSpacing="-0.01em" mb={0.5}>
+            Quick Reference
+          </Text>
+          <Text fontSize="body-sm" color="inkMuted" lineHeight={1.5}>
+            The Objection Loop and six closing techniques, ready between customers.
+          </Text>
+        </Box>
+        <Icon as={ArrowRight} boxSize={4} color="inkDim" _groupHover={{ color: 'ink' }} transition="color 150ms" />
+      </HStack>
 
       {/* Upcoming tracks */}
       <VStack align="stretch" spacing={3}>
