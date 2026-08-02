@@ -46,3 +46,6 @@ manuals/
 
 # Bridge cleanup staging (files the cloud session could not delete)
 _to_delete/
+
+# Local MCP config holds the Supabase access token. Never commit.
+.mcp.json
