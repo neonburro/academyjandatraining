@@ -1,7 +1,7 @@
 // src/components/layout/MobileNav.jsx
 // Fixed bottom nav for mobile. Mirrors the sidebar language so mobile and
-// desktop use the same words: Today, Courses, Calendar. The fourth slot is
-// More, which opens a bottom sheet rather than a route.
+// desktop use the same words: Today, Training, Coach. The fourth slot is
+// More, which opens a bottom sheet (Calendar, Team, Settings, Admin, Log out).
 //
 // Breakpoint matches Sidebar exactly: sidebar shows at lg and up, this shows
 // below lg. One breakpoint, never both at once.
@@ -23,7 +23,7 @@ import {
   useDisclosure,
 } from '@chakra-ui/react'
 import {
-  LayoutDashboard, BookOpen, Calendar, MoreHorizontal,
+  LayoutDashboard, Map, Sparkles, Calendar, MoreHorizontal,
   Users, Settings, ShieldCheck, LogOut,
 } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth'
@@ -31,8 +31,8 @@ import { signOut } from '../../lib/auth'
 
 const NAV_ITEMS = [
   { to: '/dashboard/', label: 'Today', icon: LayoutDashboard },
-  { to: '/courses/', label: 'Courses', icon: BookOpen },
-  { to: '/calendar/', label: 'Calendar', icon: Calendar },
+  { to: '/courses/', label: 'Training', icon: Map },
+  { to: '/coach/', label: 'Coach', icon: Sparkles },
 ]
 
 function ActiveTick({ show }) {
@@ -105,6 +105,7 @@ export default function MobileNav() {
   const { isAdmin } = useAuth()
 
   const moreIsActive =
+    location.pathname.startsWith('/calendar/') ||
     location.pathname.startsWith('/team/') ||
     location.pathname.startsWith('/settings/') ||
     location.pathname.startsWith('/admin/')
@@ -181,6 +182,7 @@ export default function MobileNav() {
               aria-hidden="true"
             />
             <VStack align="stretch" spacing={0}>
+              <SheetRow icon={Calendar} label="Calendar" onClick={() => go('/calendar/')} />
               <SheetRow icon={Users} label="Team" onClick={() => go('/team/')} />
               <SheetRow icon={Settings} label="Settings" onClick={() => go('/settings/')} />
 

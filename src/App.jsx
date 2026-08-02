@@ -1,7 +1,8 @@
 // src/App.jsx
 // Top-level routes. Public: /login/, /signup/, /reset-password/.
-// Protected: /dashboard/, /courses/, /calendar/, /team/, /settings/.
-// Insights folded into the dashboard AI coach and removed as a route.
+// Protected: /dashboard/, /courses/ (Training hub), /courses/roadmap/ and
+// /courses/roadmap/:slug/ (the 13-step path), /coach/, /calendar/, /team/,
+// /settings/.
 
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Box, Spinner, Center } from '@chakra-ui/react'
@@ -15,6 +16,9 @@ import Dashboard from './pages/Dashboard'
 import CalendarPage from './pages/Calendar'
 import Team from './pages/Team'
 import Courses from './pages/Courses'
+import Roadmap from './pages/Roadmap'
+import StepDetail from './pages/Roadmap/StepDetail'
+import Coach from './pages/Coach'
 import Settings from './pages/Settings'
 
 export default function App() {
@@ -44,6 +48,9 @@ export default function App() {
           <Route path="/" element={<Navigate to="/dashboard/" replace />} />
           <Route path="/dashboard/" element={<Dashboard />} />
           <Route path="/courses/" element={<Courses />} />
+          <Route path="/courses/roadmap/" element={<Roadmap />} />
+          <Route path="/courses/roadmap/:slug/" element={<StepDetail />} />
+          <Route path="/coach/" element={<Coach />} />
           <Route path="/calendar/" element={<CalendarPage />} />
           <Route path="/team/" element={<Team />} />
           <Route path="/settings/" element={<Settings />} />

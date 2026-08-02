@@ -1,0 +1,544 @@
+{
+  "perStep": [
+    {
+      "number": 1,
+      "managerCheckpoints": [
+        "Observe whether every arriving customer is acknowledged promptly",
+        "Listen for a complete introduction and a transition question",
+        "Coach the salesperson who stays behind the desk or uses a passive let me know"
+      ],
+      "coachingNotes": [
+        "Use a brief welcome immediately, even when finishing another task",
+        "Start with the customer and purpose, not the transaction. Never open with What can I sell you or a price question",
+        "Escort, introduce and transfer useful context instead of handing the customer off without an introduction",
+        "Accept just looking, then ask one low-pressure discovery question instead of letting it end the conversation",
+        "Prompt does not mean aggressive. Acknowledge the customer quickly, then match their pace",
+        "Debrief role-play by asking what created trust, where the salesperson advanced too quickly and what exact phrase should be repeated or replaced. End with one behavior each participant will apply on the next customer"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "The Customer Who Wants Space",
+          "scenario": "The customer enters slowly, avoids eye contact and says We're just looking. The salesperson must welcome them, reduce pressure and earn one discovery question. Roles: salesperson, customer and observer scoring pace, posture and transition.",
+          "evaluationCriteria": [
+            "Customer gives a name",
+            "Salesperson does not argue with just looking",
+            "Conversation advances to a use or category question",
+            "No price promise or product dump"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Approaches promptly without crowding the customer",
+        "Uses a consistent introduction that earns the customer's name and purpose",
+        "Transitions naturally into Interview and Discovery",
+        "Recognizes body-language and pace cues without surrendering leadership"
+      ]
+    },
+    {
+      "number": 2,
+      "managerCheckpoints": [
+        "Review whether CRM notes contain useful discovery, not just looking for side-by-side",
+        "Ask the salesperson to state the customer's top three priorities before approving unit selection",
+        "Coach missing questions one at a time instead of demanding a longer interrogation"
+      ],
+      "coachingNotes": [
+        "Use follow-up questions connected to the customer's last answer instead of asking a checklist of questions without listening",
+        "Explain the purpose of financing questions and offer options without assuming the customer will be offended",
+        "Clarify who will use the unit and who must be comfortable with the decision",
+        "Repeat the priorities and earn agreement before selecting. Never show inventory before summarizing",
+        "Good discovery is a conversation with direction. Ask, listen, clarify and summarize",
+        "Do not ask for information that has no purpose. Explain why sensitive questions matter"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Discovery Without Interrogation",
+          "scenario": "The customer says they want something affordable for weekend use but provides limited detail. The salesperson must uncover use, users, must-haves, trade, timing and purchase structure. Roles: salesperson, customer with hidden priorities and observer tracking open and closed questions.",
+          "evaluationCriteria": [
+            "At least five useful facts are uncovered",
+            "Salesperson summarizes accurately",
+            "Customer agrees with the summary",
+            "No unit is selected until discovery is complete"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Conducts a conversational needs assessment",
+        "Captures useful notes without making the customer feel interrogated",
+        "Identifies use, users, priorities, trade, timing and purchase structure",
+        "Summarizes the discovery and earns permission to select a unit"
+      ]
+    },
+    {
+      "number": 3,
+      "managerCheckpoints": [
+        "Require a concise customer brief before the salesperson leaves the desk",
+        "Use the introduction to learn the customer's name and confirm one priority",
+        "Track manager contacts and unsold customers who left without a manager conversation"
+      ],
+      "coachingNotes": [
+        "Require the salesperson to explain the unit match in the customer's words. Never select the unit before discovery",
+        "Make the manager introduction early and routine, not a rescue after the salesperson has lost control",
+        "The manager strengthens the salesperson, then returns ownership. The manager must not take over and sideline the salesperson",
+        "Begin with one deliberate choice and add a second only for a reason. Too many choices create confusion",
+        "No customer should leave without manager contact when dealership policy requires it"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "The First Choice",
+          "scenario": "Using a completed discovery worksheet, the salesperson briefs the manager, introduces the manager and presents one first-choice unit. Roles: salesperson, manager, customer and observer.",
+          "evaluationCriteria": [
+            "Manager receives a concise customer brief",
+            "Introduction adds confidence",
+            "Unit selection is tied to priorities",
+            "Plan B is mentioned without creating confusion"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Selects a first-choice unit based on stated priorities",
+        "Uses a purposeful desk touch and manager introduction",
+        "Explains the manager's value without weakening the salesperson",
+        "Prepares a credible Plan B without overwhelming the customer"
+      ]
+    },
+    {
+      "number": 4,
+      "managerCheckpoints": [
+        "Use daily walkarounds to assign one FFB to each salesperson",
+        "Ask why does that matter to this customer whenever a salesperson recites a specification",
+        "Correct inaccurate product claims immediately"
+      ],
+      "coachingNotes": [
+        "Limit the presentation to relevant priorities and value-building support instead of reciting the brochure",
+        "Require every major feature to end with which means so the benefit is stated",
+        "Verify the fact and explain the source rather than making claims the salesperson cannot support",
+        "Create customer interaction and check-in questions instead of talking continuously",
+        "Involve the customer. Opening, touching, sitting, loading, connecting and comparing create ownership",
+        "End by summarizing the three strongest reasons this unit fits"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Turn Specifications into Value",
+          "scenario": "The trainer assigns a product feature and a customer use. The salesperson must deliver three different FFB explanations for three different customer profiles. Roles: salesperson, customer profile reader and observer.",
+          "evaluationCriteria": [
+            "Feature is accurate",
+            "Function is clear",
+            "Benefit is personal and specific",
+            "Customer is invited to interact or respond"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Explains the difference between a feature, function and benefit",
+        "Builds a presentation around discovery instead of reciting every specification",
+        "Uses an organized walkaround that fits the product category",
+        "Confirms value with customer participation and questions"
+      ]
+    },
+    {
+      "number": 5,
+      "managerCheckpoints": [
+        "Approve routes and verify policy compliance",
+        "Observe whether demos actually occur or are replaced with parking-lot conversations",
+        "Review one buying signal with the salesperson before numbers are presented"
+      ],
+      "coachingNotes": [
+        "Use an approved route and product-specific safety policy. Never improvise an unsafe route",
+        "Allow quiet experience, then ask focused questions instead of talking through the entire customer drive",
+        "Demonstrate responsibly and within dealership and manufacturer guidance. No extreme capability demonstrations",
+        "Ask an ownership question and transition directly to the Trial Close instead of returning without confirming fit",
+        "Safety, licensing, waivers, protective equipment and dealership policy are never optional",
+        "A presentation tells. A demonstration proves"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Purposeful Demo",
+          "scenario": "The salesperson must conduct a pre-drive briefing, demonstrate one relevant function, transfer control and ask two ownership questions. Roles: salesperson, customer, safety observer and value observer.",
+          "evaluationCriteria": [
+            "Safety steps are complete",
+            "Narration is relevant",
+            "Customer receives time to experience",
+            "Buying signals are captured"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Prepares and leads a safe, purposeful demonstration",
+        "Uses the route to reinforce selected benefits",
+        "Transfers control to the customer according to dealership policy",
+        "Creates emotional ownership and gathers buying signals"
+      ]
+    },
+    {
+      "number": 6,
+      "managerCheckpoints": [
+        "Ask the salesperson to report the customer's trial-close response before presenting numbers",
+        "Coach the difference between a buying signal and an assumption",
+        "Do not permit numbers to become the first serious commitment conversation"
+      ],
+      "coachingNotes": [
+        "Earn the trial close with discovery and demonstration first. Never ask before building value",
+        "Ask direct, natural questions and listen to the answer instead of using manipulative tag questions repeatedly",
+        "Clarify the concern before advancing. Never ignore a negative answer",
+        "Use small commitments to prevent surprises later instead of waiting for the final close",
+        "A trial close is a temperature check. It does not replace the final ask",
+        "A hesitant answer is useful information. Clarify the concern instead of arguing"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "The Honest Temperature Check",
+          "scenario": "The customer likes the unit but says I'm not sure yet. The salesperson must use a trial close, clarify the concern and choose the correct next step. Roles: salesperson, customer and observer.",
+          "evaluationCriteria": [
+            "Question is natural and specific",
+            "Salesperson listens to the answer",
+            "Concern is categorized correctly",
+            "Next step fits the concern"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Recognizes natural moments for a trial close",
+        "Uses low-pressure questions that measure ownership and fit",
+        "Responds productively to a negative or uncertain answer",
+        "Avoids treating a trial close as the final close"
+      ]
+    },
+    {
+      "number": 7,
+      "managerCheckpoints": [
+        "Coordinate with service and parts so the step is expected and supported",
+        "Observe whether salespeople edify accurately or use vague praise",
+        "Track skipped tours and the reason they were skipped"
+      ],
+      "coachingNotes": [
+        "Use a brief prepared introduction or alternate approved method instead of skipping the step because the store is busy",
+        "Focus on two or three ownership benefits instead of turning the tour into a long department presentation",
+        "Use only verified capabilities. Never offer services the dealership does not provide",
+        "Share the customer's use and likely ownership need instead of introducing the customer without context",
+        "Edification must be genuine and specific. False praise feels scripted",
+        "The introduction should be brief, prepared and relevant to ownership"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Why Buy Here?",
+          "scenario": "The salesperson has two minutes to introduce service and parts and connect one capability to the customer's stated use. Roles: salesperson, service or parts teammate, customer and observer.",
+          "evaluationCriteria": [
+            "Purpose is explained",
+            "Teammate is introduced by name",
+            "One relevant ownership benefit is connected",
+            "Transition back to the process is smooth"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Explains why service and parts belong before finance",
+        "Delivers a concise tour or introduction without creating delay",
+        "Edifies dealership teammates and ownership resources",
+        "Connects retention benefits to the customer's intended use"
+      ]
+    },
+    {
+      "number": 8,
+      "managerCheckpoints": [
+        "Inspect appraisal completeness before assigning value",
+        "Coach neutral condition language and stop beat up the trade tactics",
+        "Explain the market evidence behind the appraisal when appropriate"
+      ],
+      "coachingNotes": [
+        "Set the expectation that the appraiser determines the supported value. Never promise a value before the appraisal",
+        "Explain equity or negative equity only after both facts are known. Payoff is not proof of value",
+        "Document condition neutrally and respectfully. Never criticize the customer's trade",
+        "Use the walkaround with the customer to gather information and reduce surprises",
+        "The salesperson gathers facts; the approved manager or appraisal process determines value",
+        "Condition should be documented objectively, not dramatized to create fear"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Trade Without Tension",
+          "scenario": "The customer owes more than they expect the trade to be worth and says I need payoff. The salesperson must separate payoff, value and structure without arguing. Roles: salesperson, customer and appraisal observer.",
+          "evaluationCriteria": [
+            "Payoff and value are explained separately",
+            "Condition language remains neutral",
+            "No unsupported value is promised",
+            "Customer understands the next step"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Separates payoff from market value",
+        "Conducts a professional walkaround and condition review with the customer",
+        "Captures complete trade information in the approved system",
+        "Uses neutral language and avoids devaluing games"
+      ]
+    },
+    {
+      "number": 9,
+      "managerCheckpoints": [
+        "Review the pencil with the salesperson before presentation",
+        "Require a specific objection and conditional commitment on every return",
+        "Coach payment-only presentations and unclear trade and equity explanations"
+      ],
+      "coachingNotes": [
+        "Present calmly and let the customer respond. Never apologize for the numbers before presenting them",
+        "Pause after asking for commitment. Give the customer time to process",
+        "Return with the exact concern and commitment. Never change figures without manager approval",
+        "Keep price, trade, cash investment and payment structure clear and separate instead of focusing only on payment",
+        "Numbers should not be the first time the customer experiences value or commitment",
+        "Present the approved proposal exactly as structured. Do not improvise discounts, rates or payments"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Clear Proposal, Clear Ask",
+          "scenario": "The customer likes the unit but reacts to the monthly option. The salesperson must identify whether the issue is payment, cash investment, term, trade or overall value. Roles: salesperson, customer and manager observer.",
+          "evaluationCriteria": [
+            "Proposal is explained in order",
+            "Figures are not improvised",
+            "Salesperson pauses after the ask",
+            "Concern is isolated before returning to the manager"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Prepares with the manager and understands every figure before presenting",
+        "Uses consistent terminology and presentation order",
+        "Explains price, trade, cash investment and payment options accurately",
+        "Asks for a clear commitment and returns to the manager with useful information"
+      ]
+    },
+    {
+      "number": 10,
+      "managerCheckpoints": [
+        "Make manager turnovers normal and professional, not dramatic",
+        "Ask the salesperson what the customer said verbatim before entering",
+        "Coach whether the objection was actually isolated and whether a clear reclose occurred"
+      ],
+      "coachingNotes": [
+        "Clarify and isolate first. Never answer before understanding",
+        "Respond to the actual concern in the customer's language instead of using a memorized comeback",
+        "Use only real availability or expiration information. Never create false scarcity",
+        "Respectfully clarify whether a no is final or based on a solvable concern instead of giving up after the first no",
+        "Use the J|13 Objection Loop: Listen, Clarify, Respond, Confirm, Reclose",
+        "Feel-Felt-Found can be useful when it is truthful and brief. Do not invent customer stories or use the technique to dismiss a legitimate concern",
+        "Match the closing technique to the moment: assumptive, summary, alternative choice, sharp-angle, if-I-could-would-you and legitimate urgency. Never manufacture urgency"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Clarify Before You Answer",
+          "scenario": "The customer says I need to think about it. The salesperson must discover whether the issue is product fit, timing, another decision participant, trade or money. Roles: salesperson, customer with assigned hidden concern and observer.",
+          "evaluationCriteria": [
+            "Customer finishes speaking",
+            "At least two clarifying questions are used",
+            "Concern is isolated",
+            "Response matches the real issue",
+            "Salesperson recloses"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Distinguishes a question, concern, objection and stall",
+        "Uses the J|13 Objection Loop",
+        "Applies closing techniques at the appropriate moment",
+        "Uses manager assistance without abandoning ownership of the customer",
+        "Documents the outcome and next step in the CRM"
+      ]
+    },
+    {
+      "number": 11,
+      "managerCheckpoints": [
+        "Inspect whether every qualified customer receives the approved finance process",
+        "Coach salespeople who quote rates or discourage products",
+        "Use finance feedback to identify missing customer context in handoffs"
+      ],
+      "coachingNotes": [
+        "Explain the business manager's advisory and ownership role. Never call finance the paperwork person",
+        "Refer exact approval questions to finance. Never promise a rate or payment",
+        "Give every qualified customer a complete presentation. Never prejudge product interest or say you won't want that",
+        "Prepare delivery and complete the exit experience instead of dropping the customer at finance and taking another customer",
+        "Cash customers may still benefit from financing flexibility, protection products or liquidity; the conversation must remain factual and optional",
+        "Brief the business manager on use, ownership priorities, decision participants, trade, timing and any questions already asked"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "The Warm Handoff",
+          "scenario": "The customer is paying cash and says they do not need finance. The salesperson must explain the complete review without pressure or promising value. Roles: salesperson, customer, business manager and observer.",
+          "evaluationCriteria": [
+            "Finance role is explained accurately",
+            "Customer priorities are transferred",
+            "No product or approval is promised",
+            "Salesperson states what happens during finance"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Explains the purpose of the business office accurately",
+        "Completes a warm handoff with useful customer context",
+        "Avoids pre-selling or disqualifying finance products",
+        "Supports cash-conversion conversations ethically and consistently"
+      ]
+    },
+    {
+      "number": 12,
+      "managerCheckpoints": [
+        "Audit delivery checklists and promised-work completion",
+        "Review prior-day deliveries and unsold follow-up every morning",
+        "Listen for purposeful follow-up, not vague just checking in calls"
+      ],
+      "coachingNotes": [
+        "Complete the current customer experience or arrange an approved team handoff instead of rushing delivery because another customer arrived",
+        "Call with a specific purpose, update, question or piece of value instead of a generic checking in follow-up",
+        "Use the CRM as the system of record. Never count unlogged contact attempts",
+        "Honor a clear no-contact request and follow policy",
+        "Delivery is not the end of the sale. It is the beginning of ownership and the first proof that promises will be kept",
+        "Continue follow-up until the customer buys, clearly declines, chooses another option, requests no contact or moves into the dealership's long-term nurture plan"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Delivery Teach-Back",
+          "scenario": "The salesperson must deliver a unit, explain one safety-critical feature and use teach-back before setting the next-day follow-up. Roles: salesperson, customer and observer.",
+          "evaluationCriteria": [
+            "Checklist is used",
+            "Critical feature is explained accurately",
+            "Customer demonstrates understanding",
+            "Follow-up time and channel are set"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Delivers the unit with a consistent checklist",
+        "Confirms paperwork, product operation and ownership resources",
+        "Sets the first follow-up expectation before the customer leaves",
+        "Uses a purposeful sold and unsold follow-up cadence recorded in the CRM"
+      ]
+    },
+    {
+      "number": 13,
+      "managerCheckpoints": [
+        "Set visible activity standards and inspect CRM quality, not only totals",
+        "Confirm appointments personally and keep the appointment board current",
+        "Review prior-day unsold customers and missed appointments every morning",
+        "Recognize two-way contacts, shows and process quality as leading indicators"
+      ],
+      "coachingNotes": [
+        "Schedule protected daily outreach time instead of only prospecting when traffic is slow",
+        "Reference the customer, unit, timing or useful update instead of leaving generic voicemails with no reason to respond",
+        "Record the work in the CRM. Never count unlogged activity",
+        "Earn the referral through a strong experience, then ask directly. Never ask before creating value",
+        "Two-way contacts matter more than raw dials, but consistent activity creates those conversations",
+        "For commercial prospects, conduct a needs analysis, record equipment cycles and schedule a consistent follow-up plan tied to the business cycle rather than generic monthly calls"
+      ],
+      "roleplayLabs": [
+        {
+          "title": "Appointment With a Reason",
+          "scenario": "The salesperson receives an aged lead with no recent response. Create a call, voicemail, text and short video message that share one useful reason to reconnect. Roles: salesperson, prospect and observer.",
+          "evaluationCriteria": [
+            "Message is personal and relevant",
+            "Appointment ask is specific",
+            "Two time choices are offered",
+            "CRM next step is clear"
+          ]
+        }
+      ],
+      "signoffCriteria": [
+        "Builds a daily prospecting rhythm with activity goals for calls, two-way contacts, appointments, confirmations and shows",
+        "Uses the CRM to manage outbound activity and long-term opportunities",
+        "Asks for referrals naturally throughout the ownership cycle",
+        "Applies the process to commercial and community prospects"
+      ]
+    }
+  ],
+  "managementSystem": {
+    "dailyDisciplines": [
+      {
+        "name": "Morning Meeting",
+        "description": "Morning meeting with results, appointments, deliveries, aged opportunities and one skill focus."
+      },
+      {
+        "name": "Salesperson One-on-Ones",
+        "description": "Daily one-on-ones that review pipeline, prior-day unsold customers, activity and specific obstacles."
+      },
+      {
+        "name": "Appointment Confirmation",
+        "description": "Manager confirmation of appointments and visible appointment-board accuracy."
+      },
+      {
+        "name": "Manager Customer Contact",
+        "description": "Manager introduction or contact with every active customer according to dealership policy."
+      },
+      {
+        "name": "Unsold Customer Review",
+        "description": "Immediate review of every unsold customer before the opportunity goes cold."
+      },
+      {
+        "name": "End-of-Day CRM Inspection",
+        "description": "End-of-day CRM inspection covering notes, next actions, appointments, lost reasons and follow-up completion."
+      }
+    ],
+    "weeklyCoachingRhythm": [
+      "One recorded or live role-play per salesperson",
+      "One product FFB presentation per salesperson",
+      "Pipeline and aged-lead review",
+      "Deal review: where process or value was lost",
+      "Finance handoff and product-opportunity feedback",
+      "Recognition of process behaviors, not only deliveries"
+    ],
+    "coreScorecard": [
+      "Opportunities: fresh ups, leads, service opportunities, referrals and self-generated prospects",
+      "Contacts: calls, texts, emails, videos and meaningful two-way contacts",
+      "Appointments: set, manager-confirmed, shown and sold",
+      "Process: manager introductions, demonstrations, service and parts introductions, appraisals and proposals",
+      "Results: units, front gross, finance gross, products, total gross and customer experience",
+      "Follow-Through: CRM notes, lost reasons, scheduled tasks, sold follow-up and referral requests"
+    ],
+    "managerDailyAudit": [
+      "Morning meeting completed",
+      "Appointments reviewed and confirmed",
+      "Prior-day unsold follow-up inspected",
+      "Salesperson one-on-ones completed",
+      "Manager introductions and contacts completed",
+      "Demonstrations completed",
+      "Service and parts introductions completed",
+      "Trade information complete",
+      "Proposals reviewed before presentation",
+      "Manager turnovers completed when needed",
+      "Finance handoffs complete",
+      "Deliveries and follow-up scheduled",
+      "CRM notes and lost reasons complete",
+      "Most important coaching action today identified"
+    ],
+    "oneOnOneGuide": [
+      "Review the pipeline and aged opportunities",
+      "Review prior-day unsold customers before the opportunity goes cold",
+      "Review activity against goals: calls, two-way contacts, appointments, shows, deliveries and referrals",
+      "Identify specific obstacles and priorities for the day",
+      "Use coaching language: describe the observed behavior, explain the impact, demonstrate the correction, require a repetition and set a time to inspect it again",
+      "Avoid vague feedback such as be more aggressive or try harder",
+      "Recognize process behaviors, not only deliveries"
+    ]
+  },
+  "certification": {
+    "requirements": [
+      "Certification requires knowledge, demonstrated skill and manager commitment to reinforcement",
+      "Pass a seven-question knowledge assessment recorded as a knowledge score",
+      "Complete a practical assessment demonstrating all eleven process behaviors from Meet and Greet through the prospecting appointment call",
+      "Sign the J|13 Commitment stating the steps will not be treated as optional based on convenience, traffic level or personal habit, countersigned by the manager",
+      "Manager commits to inspect trained behaviors after the trainer leaves so training becomes visible on the floor and in the CRM"
+    ],
+    "knowledgeCheckStandard": "Seven-question knowledge assessment: state the 13 steps in order; explain Feature, Function and Benefit; describe the purpose of the early Manager Introduction; explain the difference between trade value and payoff; state the five-step J|13 Objection Loop; describe the finance handoff standard; explain when follow-up should stop or change cadence. Each step module also includes its own written knowledge check.",
+    "practicalEvaluation": "Live demonstration of eleven behaviors: Meet and Greet and transition, Interview and Discovery summary, Manager Introduction, FFB presentation, Demo and Trial Close, Service and Parts Introduction, trade conversation, Present Numbers and close, finance handoff, delivery and follow-up and a prospecting appointment call. Role-play is scored on the Role-Play Observation Scorecard from 1 (not demonstrated) to 5 (consistent and natural) with a target of 4 or higher on all twelve criteria, scoring the behavior, not the personality.",
+    "reassessment": "The certification evaluation records a knowledge score, practical score, overall result and a reassessment date. Participants who do not meet the standard receive one behavior to repeat, one behavior to correct and a repetition deadline with manager inspection, then are reassessed on the scheduled date. The trainer rule applies: hearing a script once is exposure; performing it correctly, under pressure, with a real customer is mastery."
+  },
+  "facilitation": {
+    "deliveryModel": "The Trainer Edition is a facilitation system, not a manual to be read aloud cover to cover. Every module is taught through explanation, demonstration, practice, observation and follow-through, with examples customized to the dealership's brands, inventory, CRM, forms, policies and customer base. The exact J|13 sequence is taught before personal variations in wording are allowed. Role-play builds skill, not embarrassment: start simple, add resistance and coach one behavior at a time. Managers must participate because a process without manager reinforcement becomes a short-term event. Commitments, assignments and observed behaviors are documented, and participant handouts are derived from this master edition so trainer and salesperson work from the same definitions. Onsite delivery follows a four-day plan: Day 1 Foundation and Control (J|13 overview, dealership teamwork, professional standards, Steps 1-3, live greeting and discovery practice, manager-introduction standard); Day 2 Build Value (Steps 4-7, inventory walkaround, FFB presentations, demo process, trial closes, service and parts introductions); Day 3 Structure the Decision (Steps 8-10, trade assessment, proposal presentation, objection loop, closing techniques, manager turnover practice); Day 4 Complete and Rebuild the Pipeline (Steps 11-13, finance handoff, delivery, follow-up, prospecting, commercial process, certification role-play, manager action plan). Each step module is estimated at 60-90 minutes with manual, participant worksheet, role-play scorecard and dealership-specific examples.",
+    "sessionStructure": [
+      "Explain why the step matters to the customer, salesperson and dealership",
+      "Demonstrate the process and approved word tracks",
+      "Let participants practice in short repetitions",
+      "Observe the step with a real customer or live inventory",
+      "Debrief with specific feedback and assign a measurable behavior",
+      "Have the manager inspect the behavior after the trainer leaves",
+      "Use the Trainer Session Plan to define the objective, observable behavior, dealership-specific policy, demonstration plan, role-play resistance level and manager inspection commitment before each module",
+      "Close each training day with the Daily Recap: what was taught and practiced, what was observed on the floor, what improved immediately, what remains inconsistent or blocked, manager commitments before the next day or visit and the metrics or evidence that will confirm progress",
+      "Before onsite delivery complete the Trainer Preparation Checklist: meet with the dealer principal or GM to define outcomes and non-negotiables, review current process, forms, CRM, finance flow and manager roles, request prior-period metrics, confirm attendees, schedule, training space and live-floor observation access, select inventory for walkaround and demonstration practice, customize scripts only where dealership policy requires it and prepare daily recap and manager commitments"
+    ]
+  }
+}

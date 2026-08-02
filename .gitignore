@@ -39,3 +39,7 @@ lerna-debug.log*
 
 # Misc
 *.log
+manuals/
+
+# Claude local session settings
+.claude/

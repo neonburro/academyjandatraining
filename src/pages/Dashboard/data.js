@@ -1,42 +1,74 @@
 // src/pages/Dashboard/data.js
-// Placeholder itinerary data for the dashboard preview. Clearly separated so
-// it is obvious what is real vs preview. When courses and progress land in
-// Supabase, these arrays get replaced by live queries with no layout change.
+// Builds the day's itinerary from the real curriculum and the user's actual
+// progress. No more placeholder arrays: the plan is derived from where the
+// user sits on the Roadmap, their open next-customer commitments and streak.
 
-export const TODAYS_PLAN = [
-  {
-    id: 'lesson-1',
-    kind: 'lesson',
-    label: 'The Meet & Greet',
-    helper: '4 min lesson',
-    meta: 'Sales Foundations',
-  },
-  {
-    id: 'quiz-1',
-    kind: 'quiz',
-    label: 'Objection handling check',
-    helper: '5 questions',
-    meta: 'Sales Foundations',
-  },
-  {
-    id: 'reflect-1',
-    kind: 'reflection',
-    label: 'Log one win from yesterday',
-    helper: 'Daily habit',
-    meta: 'Reflection',
-  },
-]
+import { STEPS } from '../../content/steps'
+import { getProgress } from '../../lib/progressStore'
 
-export const CURRENT_COURSE = {
-  title: 'Sales Foundations',
-  completed: 2,
-  total: 5,
+export function buildItinerary(userId) {
+  const progress = getProgress(userId)
+  const current = progress.currentStep
+
+  const plan = []
+
+  if (current) {
+    const fullStep = STEPS.find((s) => s.number === current.number)
+    plan.push({
+      id: `learn-${current.number}`,
+      kind: 'lesson',
+      label: current.title,
+      helper: `Step ${current.number} of 13`,
+      meta: 'Roadmap to the Sale',
+      to: `/courses/roadmap/${current.slug}/`,
+    })
+    plan.push({
+      id: `check-${current.number}`,
+      kind: 'quiz',
+      label: `${current.title} knowledge check`,
+      helper: `${fullStep?.knowledgeCheck?.length || 4} questions, 80 percent to pass`,
+      meta: 'Roadmap to the Sale',
+      to: `/courses/roadmap/${current.slug}/`,
+    })
+  }
+
+  const openCommitment = progress.openCommitments[0]
+  if (openCommitment) {
+    plan.push({
+      id: 'commitment',
+      kind: 'reflection',
+      label: 'Check in on your commitment',
+      helper: openCommitment.body.length > 60 ? `${openCommitment.body.slice(0, 60)}...` : openCommitment.body,
+      meta: 'Next customer',
+      to: '/coach/',
+    })
+  } else {
+    plan.push({
+      id: 'coach-practice',
+      kind: 'reflection',
+      label: 'Two minutes with the Coach',
+      helper: 'Role-play or a quick quiz',
+      meta: 'Practice',
+      to: '/coach/',
+    })
+  }
+
+  const DAY_LABELS = ['Next', 'Then', 'Later']
+  const upNext = progress.steps
+    .filter((s) => !s.passed && s.number !== current?.number)
+    .slice(0, 3)
+    .map((s, i) => ({ day: DAY_LABELS[i], label: `Step ${s.number}: ${s.title}` }))
+
+  return {
+    plan,
+    course: {
+      title: 'Roadmap to the Sale',
+      completed: progress.completedCount,
+      total: progress.totalCount,
+    },
+    upNext,
+    streakDays: progress.streakDays,
+    currentStep: current,
+    done: !current,
+  }
 }
-
-export const UP_NEXT = [
-  { day: 'Tomorrow', label: 'Trade evaluation' },
-  { day: 'Wed', label: 'Feature and benefit presentation' },
-  { day: 'Thu', label: 'The trial close' },
-]
-
-export const STREAK_DAYS = 1

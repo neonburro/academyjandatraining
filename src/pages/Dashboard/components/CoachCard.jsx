@@ -1,21 +1,15 @@
 // src/pages/Dashboard/components/CoachCard.jsx
-// The AI-vision placeholder. Currently shows a canned encouraging line. This is
-// where the adaptive AI coaching will live, personalized daily guidance that
-// raises difficulty as the salesperson improves. Labeled honestly as coming.
+// The door to the live J13 Coach. Personalizes the invitation with the user's
+// current step so the nudge is specific, then routes to /coach/.
 
-import { Box, HStack, VStack, Text, Flex, Icon, Badge } from '@chakra-ui/react'
-import { Sparkles } from 'lucide-react'
+import { useNavigate } from 'react-router-dom'
+import { Box, HStack, Text, Flex, Icon, Button } from '@chakra-ui/react'
+import { Sparkles, ArrowRight } from 'lucide-react'
 
-export default function CoachCard({ firstName }) {
+export default function CoachCard({ firstName, currentStep }) {
+  const navigate = useNavigate()
   return (
-    <Box
-      bg="ink"
-      color="white"
-      borderRadius="cardLg"
-      p={6}
-      position="relative"
-      overflow="hidden"
-    >
+    <Box bg="ink" color="white" borderRadius="cardLg" p={6} position="relative" overflow="hidden">
       <HStack spacing={3} mb={4}>
         <Flex w={8} h={8} borderRadius="full" bg="whiteAlpha.200" align="center" justify="center">
           <Icon as={Sparkles} boxSize={4} color="white" />
@@ -23,13 +17,24 @@ export default function CoachCard({ firstName }) {
         <Text fontSize="xs" fontWeight={600} letterSpacing="0.08em" textTransform="uppercase" color="whiteAlpha.800">
           Your coach
         </Text>
-        <Badge bg="accent.500" color="white" fontWeight={500} fontSize="10px" px={2} py={0.5} borderRadius="pill" textTransform="uppercase" letterSpacing="0.06em">
-          Coming soon
-        </Badge>
       </HStack>
-      <Text fontSize="md" lineHeight={1.6} color="whiteAlpha.900" maxW="52ch">
-        {firstName ? `${firstName}, ` : ''}your daily coaching will live here. As you complete lessons and quizzes, the Academy learns where you are strong and where to push, and builds each day's plan around it.
+      <Text fontSize="md" lineHeight={1.6} color="whiteAlpha.900" maxW="52ch" mb={5}>
+        {firstName ? `${firstName}, ` : ''}
+        {currentStep
+          ? `you're on Step ${currentStep.number}, ${currentStep.title}. I can quiz you on it, play the customer or talk through your next one.`
+          : 'ready to sharpen up? I can run role-play, quiz you on any step or talk through your next customer.'}
       </Text>
+      <Button
+        bg="white"
+        color="ink"
+        size="sm"
+        _hover={{ bg: 'whiteAlpha.900' }}
+        _active={{ bg: 'whiteAlpha.800' }}
+        rightIcon={<ArrowRight size={15} />}
+        onClick={() => navigate('/coach/')}
+      >
+        Talk to the Coach
+      </Button>
     </Box>
   )
 }

@@ -16,12 +16,13 @@
 
 import { NavLink, useLocation } from 'react-router-dom'
 import { Box, VStack, HStack, Text, Icon, Image } from '@chakra-ui/react'
-import { LayoutDashboard, BookOpen, Calendar, Users, ShieldCheck } from 'lucide-react'
+import { LayoutDashboard, Map, Sparkles, Calendar, Users, ShieldCheck } from 'lucide-react'
 import { useAuth } from '../../hooks/useAuth'
 
 const NAV_ITEMS = [
   { to: '/dashboard/', label: 'Today', icon: LayoutDashboard },
-  { to: '/courses/', label: 'Courses', icon: BookOpen },
+  { to: '/courses/', label: 'Training', icon: Map },
+  { to: '/coach/', label: 'Coach', icon: Sparkles },
   { to: '/calendar/', label: 'Calendar', icon: Calendar },
   { to: '/team/', label: 'Team', icon: Users },
 ]

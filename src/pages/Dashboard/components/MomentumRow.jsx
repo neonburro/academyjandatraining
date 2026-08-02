@@ -22,10 +22,10 @@ function StreakBadge({ days }) {
       </Flex>
       <Box>
         <Text fontSize="lg" fontWeight={700} color="ink" lineHeight={1}>
-          Day {days}
+          {days > 0 ? `Day ${days}` : 'Day one'}
         </Text>
         <Text fontSize="xs" color="inkMuted" mt={0.5}>
-          Keep the streak going
+          {days > 0 ? 'Keep the streak going' : 'Start your streak today'}
         </Text>
       </Box>
     </HStack>

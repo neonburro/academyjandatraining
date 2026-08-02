@@ -1,8 +1,9 @@
 // src/pages/Dashboard/components/TodaysPlan.jsx
-// The itinerary. Ordered cards for today: lesson, quiz, reflection. Each has a
-// kind marker, label, helper, and a start affordance. This is the heart of the
-// daily-habit product. Data is placeholder until courses land in Supabase.
+// The itinerary. Ordered cards for today: lesson, quiz, reflection. Each item
+// carries a `to` route and navigates on tap. Data comes from buildItinerary,
+// derived from the user's real Roadmap position.
 
+import { useNavigate } from 'react-router-dom'
 import { Box, Flex, HStack, VStack, Heading, Text, Icon, Badge } from '@chakra-ui/react'
 import { PlayCircle, HelpCircle, PenLine, ArrowRight } from 'lucide-react'
 
@@ -14,8 +15,10 @@ const KIND_META = {
 
 function PlanItem({ item }) {
   const meta = KIND_META[item.kind] || KIND_META.lesson
+  const navigate = useNavigate()
   return (
     <HStack
+      onClick={() => item.to && navigate(item.to)}
       spacing={4}
       px={5}
       py={4}
@@ -54,9 +57,6 @@ export default function TodaysPlan({ items }) {
         <Heading fontSize="display-sm" fontWeight={600} color="ink">
           Today's plan
         </Heading>
-        <Badge bg="accent.500" color="white" fontWeight={500} fontSize="xs" px={2.5} py={0.5} borderRadius="pill">
-          Preview
-        </Badge>
       </HStack>
       <VStack align="stretch" spacing={3}>
         {items.map((item) => (

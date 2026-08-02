@@ -1,0 +1,1301 @@
+{
+  "steps": [
+    {
+      "number": 1,
+      "slug": "meet-and-greet",
+      "title": "Meet & Greet",
+      "purpose": "Create a professional first impression, lower resistance and establish a clear next step.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Approach promptly without crowding the customer. Use a consistent introduction that earns the customer's name and purpose. Transition naturally into Interview & Discovery. Recognize body-language and pace cues without surrendering leadership."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Prepare: visible name badge, professional appearance, phone put away and awareness of arriving customers. Approach with a smile, open posture and appropriate pace. Welcome the customer and introduce yourself. Ask for the customer's name and use it once in the next sentence. Clarify whether the visit is for sales, service, parts, a specific person or a scheduled appointment. If it is a sales opportunity, set the agenda and lead to Interview & Discovery. If it belongs to another department, personally escort and introduce the customer whenever practical."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for waiting too long to acknowledge the customer; use a brief welcome immediately, even when finishing another task. Watch for opening with \"What can I sell you?\" or a price question; start with the customer and purpose, not the transaction. Watch for handing the customer off without an introduction; escort, introduce and transfer useful context. Watch for letting \"just looking\" end the conversation; accept the statement, then ask one low-pressure discovery question."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Initial welcome",
+          "text": "Good morning, welcome to [Dealership]. I'm [Name]. And you are?"
+        },
+        {
+          "label": "Purpose",
+          "text": "It's good to meet you, [Customer]. What brings you in today?"
+        },
+        {
+          "label": "Sales transition",
+          "text": "Great. I'd like to learn what is most important to you first, and then I'll help you narrow this down. Follow me."
+        },
+        {
+          "label": "Just looking",
+          "text": "That's completely fine. Let's make your looking productive. What category or use brought you in?"
+        },
+        {
+          "label": "Appointment",
+          "text": "Welcome back, [Customer]. We were expecting you. Let me get [Name] and make sure the unit is ready."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: The Customer Who Wants Space",
+          "instructions": "The customer enters slowly, avoids eye contact and says, \"We're just looking.\" The salesperson must welcome them, reduce pressure and earn one discovery question. Success standard: customer gives a name, salesperson does not argue with \"just looking\", conversation advances to a use or category question and there is no price promise or product dump."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "What is the first commitment you are trying to earn in the Meet & Greet?",
+          "options": [
+            "The customer's name and the purpose of their visit",
+            "A commitment to buy a unit today",
+            "An agreement on a monthly payment range",
+            "Permission to appraise their trade"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "How should you respond when the customer says \"I'm just looking\"?",
+          "options": [
+            "Give them your card and let them browse alone",
+            "Explain that looking without a salesperson wastes their time",
+            "Accept the statement, then ask one low-pressure discovery question",
+            "Offer a discount to spark their interest"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "What is the difference between prompt and aggressive in the approach?",
+          "options": [
+            "Prompt means running to the customer while aggressive means walking",
+            "Prompt means acknowledging the customer immediately while aggressive means crowding or pressuring them",
+            "There is no difference, both mean approaching quickly",
+            "Prompt applies to appointments and aggressive applies to walk-ins"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "A customer arrives for a service visit. What does the Meet & Greet standard call for?",
+          "options": [
+            "Point them toward the service department and return to the floor",
+            "Try to convert the visit into a sales opportunity first",
+            "Ask them to wait while you finish with other customers",
+            "Personally escort and introduce the customer whenever practical"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 2,
+      "slug": "interview-and-discovery",
+      "title": "Interview & Discovery",
+      "purpose": "Understand the customer's use, priorities, timing, decision process and ownership goals before selecting a unit.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Conduct a conversational needs assessment. Capture useful notes without making the customer feel interrogated. Identify use, users, priorities, trade, timing and purchase structure. Summarize the discovery and earn permission to select a unit."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Set the agenda: explain that a few questions will help avoid wasting time. Start broad: what brought the customer in and what are they hoping to accomplish? Understand current ownership: what they use now, what works and what needs to improve. Identify primary use, additional users, terrain, towing, payload, passengers, storage, travel or job requirements. Prioritize needs: must-have, preferred and optional. Clarify timing, decision participants and whether the customer has a trade. Ask whether they plan to pay cash or explore financing, and whether a responsible monthly range matters. Summarize what you heard and ask permission to select the best-fit unit."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for asking a checklist of questions without listening; use follow-up questions connected to the customer's last answer. Watch for avoiding financing questions because the customer may be offended; explain the purpose and offer options without assuming. Watch for skipping decision participants; clarify who will use the unit and who must be comfortable with the decision. Watch for showing inventory before summarizing; repeat the priorities and earn agreement before selecting."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Set the agenda",
+          "text": "Before we start walking inventory, may I ask a few questions so I don't waste your time showing you the wrong things?"
+        },
+        {
+          "label": "Primary use",
+          "text": "Tell me how you expect to use it most often."
+        },
+        {
+          "label": "Current unit",
+          "text": "What are you using now, and what would you like the next one to do better?"
+        },
+        {
+          "label": "Priorities",
+          "text": "Of everything you mentioned, which two or three items are non-negotiable?"
+        },
+        {
+          "label": "Decision process",
+          "text": "Who else will use it or be involved in the decision?"
+        },
+        {
+          "label": "Purchase structure",
+          "text": "Are you planning to pay cash, use outside financing or would you like us to compare options for you?"
+        },
+        {
+          "label": "Summary",
+          "text": "Let me make sure I have this right..."
+        },
+        {
+          "label": "Advance",
+          "text": "Based on what you shared, I have a strong first choice in mind. Let me verify it and bring my manager into the process."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Discovery Without Interrogation",
+          "instructions": "The customer says they want \"something affordable\" for weekend use but provides limited detail. The salesperson must uncover use, users, must-haves, trade, timing and purchase structure. Success standard: at least five useful facts are uncovered, the salesperson summarizes accurately, the customer agrees with the summary and no unit is selected until discovery is complete."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Why is a summary essential before selecting a unit?",
+          "options": [
+            "It gives the manager time to prepare numbers",
+            "It repeats the priorities and earns the customer's agreement before showing inventory",
+            "It proves the salesperson took good notes",
+            "It is required for CRM documentation"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "Which set best names the core discovery categories?",
+          "options": [
+            "Credit score, income, employment and residence",
+            "Color preference, brand loyalty, hobbies and budget",
+            "Use, users, priorities, trade, timing and purchase structure",
+            "Price, payment, term and rate"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "How do you ask about financing without assuming the answer?",
+          "options": [
+            "Ask whether they plan to pay cash, use outside financing or would like you to compare options",
+            "Wait for the business manager to bring it up",
+            "Ask what monthly payment they can afford",
+            "Assume financing unless the customer objects"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What should you do instead of asking a checklist of questions without listening?",
+          "options": [
+            "Shorten the interview to two questions",
+            "Let the customer fill out a form instead",
+            "Skip discovery and rely on the walkaround",
+            "Use follow-up questions connected to the customer's last answer"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 3,
+      "slug": "select-a-unit-and-manager-introduction",
+      "title": "Select a Unit & Manager Introduction",
+      "purpose": "Use the discovery to narrow the choice, build confidence and connect the customer with dealership leadership early.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Select a first-choice unit based on stated priorities. Use a purposeful desk touch and manager introduction. Explain the manager's value without weakening the salesperson. Prepare a credible Plan B without overwhelming the customer."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Review the discovery and identify the best-fit unit plus one Plan B. Touch the desk before leaving for inventory. Brief the manager on the customer, use and priorities. Introduce the manager by name and role. The manager welcomes the customer and reinforces the salesperson. Confirm availability, key equipment and any dealership-specific information. Bring the unit to a presentation area when practical. Separate it from the row and prepare it for presentation. Explain why it is the first choice using the customer's own priorities. Use Plan B only when the first choice misses a required need or the customer identifies a meaningful concern."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for selecting the unit before discovery; require the salesperson to explain the match in the customer's words. Watch for introducing the manager only when there is a problem; make the introduction early and routine. Watch for the manager taking over and sidelining the salesperson; the manager strengthens the salesperson, then returns ownership. Watch for showing three or four units at once; begin with one deliberate choice and add a second only for a reason."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Desk touch",
+          "text": "Based on what you shared, I have a strong first choice. I'm going to verify it with my manager and make sure we have the right information before we walk out."
+        },
+        {
+          "label": "Manager introduction",
+          "text": "[Customer], this is [Manager], our [Role]. I'll be checking with [him/her/them] throughout your visit so we can answer everything accurately."
+        },
+        {
+          "label": "Manager reinforcement",
+          "text": "You're in good hands with [Salesperson]. [They] know our process and will help you compare this correctly. I'll stay involved as needed."
+        },
+        {
+          "label": "Unit reveal",
+          "text": "I selected this one first because it gives you [priority one], [priority two] and the [specific capability] you said mattered most."
+        },
+        {
+          "label": "Plan B",
+          "text": "I also have a second option in mind, but let's evaluate this one against your priorities before we add another choice."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: The First Choice",
+          "instructions": "Using a completed discovery worksheet, the salesperson briefs the manager, introduces the manager and presents one first-choice unit. Success standard: the manager receives a concise customer brief, the introduction adds confidence, the unit selection is tied to priorities and Plan B is mentioned without creating confusion."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Why should the manager introduction happen early?",
+          "options": [
+            "So the manager can start working numbers immediately",
+            "So the salesperson can take a break during the visit",
+            "It makes the introduction routine and adds confidence instead of signaling a problem",
+            "It is only required for appointment customers"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "What information belongs in the manager brief at the desk touch?",
+          "options": [
+            "The customer's credit history and income",
+            "The customer, their use and their priorities",
+            "The discount the salesperson plans to offer",
+            "Only the stock number of the selected unit"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "When should Plan B be introduced?",
+          "options": [
+            "At the same time as the first choice so the customer can compare",
+            "Whenever the customer hesitates on anything",
+            "Before discovery so options stay open",
+            "Only when the first choice misses a required need or the customer identifies a meaningful concern"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "question": "What should the manager do during the introduction?",
+          "options": [
+            "Welcome the customer, reinforce the salesperson and then return ownership",
+            "Take over the presentation from the salesperson",
+            "Present the numbers while momentum is high",
+            "Stay at the desk unless a problem develops"
+          ],
+          "answerIndex": 0
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 4,
+      "slug": "feature-function-and-benefit-presentation",
+      "title": "Feature Function & Benefit Presentation",
+      "purpose": "Translate product knowledge into personal value the customer can see, feel and remember.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Explain the difference between a feature, function and benefit. Build a presentation around discovery instead of reciting every specification. Use an organized walkaround that fits the product category. Confirm value with customer participation and questions."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Restate the customer's top priorities before beginning. Use a consistent presentation route: exterior/front, operator area, passenger or cargo area, rear/service access and final seating position. For each important item, name the feature, explain its function and connect the benefit to the customer's use. Use evidence: demonstrate, show a label, compare capacity or explain the design accurately. Invite the customer to interact with the unit and ask a check-in question. Avoid unsupported claims and verify uncertain information. End by summarizing the three strongest reasons this unit fits."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for reciting the brochure; limit the presentation to relevant priorities and value-building support. Watch for naming features without benefits; require every major feature to end with \"which means...\" Watch for making claims the salesperson cannot support; verify the fact and explain the source. Watch for talking continuously; create customer interaction and check-in questions."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Connect to discovery",
+          "text": "You said [priority] mattered because [reason]. This feature is designed specifically for that."
+        },
+        {
+          "label": "FFB",
+          "text": "This has [feature]. It [function], which means you get [personal benefit]."
+        },
+        {
+          "label": "Customer participation",
+          "text": "Go ahead and try that. What do you notice?"
+        },
+        {
+          "label": "Check-in",
+          "text": "How does that compare with what you are using now?"
+        },
+        {
+          "label": "Verify information",
+          "text": "I want to make sure I give you the exact specification. Let me verify that rather than guess."
+        },
+        {
+          "label": "Summary",
+          "text": "The three strongest matches for you are [one], [two] and [three]."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Turn Specifications into Value",
+          "instructions": "The trainer assigns a product feature and a customer use. The salesperson must deliver three different FFB explanations for three different customer profiles. Success standard: the feature is accurate, the function is clear, the benefit is personal and specific and the customer is invited to interact or respond."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Which statement correctly defines feature, function and benefit?",
+          "options": [
+            "A feature is the price, the function is the payment and the benefit is the savings",
+            "A feature is what the unit has, the function is what it does and the benefit is what that means personally for the customer",
+            "A feature is the warranty, the function is the coverage and the benefit is the term",
+            "Feature, function and benefit are three names for the same thing"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "Why should the presentation route be consistent?",
+          "options": [
+            "An organized walkaround that fits the product category keeps the presentation complete and professional",
+            "It allows the salesperson to memorize one script for every customer",
+            "It guarantees the customer will buy",
+            "It helps the salesperson finish faster and take more customers"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What question turns a product monologue into customer participation?",
+          "options": [
+            "Do you want to hear about the warranty next?",
+            "Can I show you one more thing?",
+            "Go ahead and try that. What do you notice?",
+            "Are you ready to talk numbers?"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "How should the presentation end?",
+          "options": [
+            "With a full recital of the remaining specifications",
+            "With a direct request for a deposit",
+            "With the brochure and a business card",
+            "By summarizing the three strongest reasons this unit fits"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 5,
+      "slug": "demonstration-drive",
+      "title": "Demonstration Drive",
+      "purpose": "Let the customer experience the product safely while reinforcing the value that matters most.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Prepare and lead a safe, purposeful demonstration. Use the route to reinforce selected benefits. Transfer control to the customer according to dealership policy. Create emotional ownership and gather buying signals."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Confirm the unit is safe, fueled or charged, clean and ready. Complete required license, insurance, waiver and protective-equipment steps. Explain controls, route, expectations and safety before moving. When policy supports it, the salesperson demonstrates first and narrates only the most relevant functions. Transfer control safely and let the customer experience the product without constant talking. Ask ownership and trial-close questions at natural points. Return to a designated area, confirm the fit and transition into the Trial Close."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for improvising an unsafe route; use an approved route and product-specific safety policy. Watch for talking through the entire customer drive; allow quiet experience, then ask focused questions. Watch for using extreme capability demonstrations; demonstrate responsibly and within dealership/manufacturer guidance. Watch for returning without confirming fit; ask an ownership question and transition directly to the Trial Close."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Pre-drive",
+          "text": "Before we move, I'll review the controls, our route and the safety items so you know exactly what to expect."
+        },
+        {
+          "label": "Demonstrate",
+          "text": "Watch what happens when I use [feature]. This is where it helps with [customer use]."
+        },
+        {
+          "label": "Customer drive",
+          "text": "I'll switch with you here. Take a moment to adjust everything before we move."
+        },
+        {
+          "label": "Ownership question",
+          "text": "Where do you picture using this first?"
+        },
+        {
+          "label": "Buying signal",
+          "text": "What has impressed you most so far?"
+        },
+        {
+          "label": "Return",
+          "text": "Let's park it in our delivery area and make sure it checks every box before we review the next step."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Purposeful Demo",
+          "instructions": "The salesperson must conduct a pre-drive briefing, demonstrate one relevant function, transfer control and ask two ownership questions. Success standard: safety steps are complete, narration is relevant, the customer receives time to experience and buying signals are captured."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "What must be completed before the unit moves?",
+          "options": [
+            "The trade appraisal and payoff verification",
+            "Required license, insurance, waiver and protective-equipment steps plus a review of controls, route and safety",
+            "A signed purchase agreement",
+            "The manager's approval of the numbers"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "Why should the demonstration route be purposeful?",
+          "options": [
+            "It uses the route to reinforce selected benefits while staying safe and approved",
+            "It keeps the drive as short as possible",
+            "It shows off the unit's maximum capability",
+            "It avoids traffic so the customer relaxes"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What should the salesperson do after the customer has experienced the product?",
+          "options": [
+            "Head straight to the finance office",
+            "Start the trade walkaround immediately",
+            "Return to a designated area, confirm the fit and transition into the Trial Close",
+            "Offer a second demonstration on a different unit"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "How should the salesperson behave while the customer is driving?",
+          "options": [
+            "Narrate every feature continuously to build value",
+            "Discuss numbers to save time",
+            "Stay silent for the entire drive no matter what",
+            "Allow quiet experience, then ask focused ownership questions at natural points"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 6,
+      "slug": "trial-close",
+      "title": "Trial Close",
+      "purpose": "Measure readiness, uncover hesitation and earn small commitments before presenting numbers.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Recognize natural moments for a trial close. Use low-pressure questions that measure ownership and fit. Respond productively to a negative or uncertain answer. Avoid treating a trial close as the final close."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Listen for buying signals: delivery questions, accessory questions, ownership language, approval from a partner or concern about one remaining issue. Ask a simple fit, preference or conditional-commitment question. If the answer is positive, reinforce and advance. If the answer is uncertain, ask what would need to change. If the answer is negative, isolate whether the issue is product, timing, trade, price, payment or another decision participant. Resolve or select a better unit before presenting numbers."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for asking a trial close before building value; earn the question with discovery and demonstration first. Watch for using manipulative tag questions repeatedly; ask direct, natural questions and listen to the answer. Watch for ignoring a negative answer; clarify the concern before advancing. Watch for never asking for any commitment until the final close; use small commitments to prevent surprises later."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Fit",
+          "text": "Is this the unit you would most like to own?"
+        },
+        {
+          "label": "Conditional",
+          "text": "If the numbers fit the responsible range we discussed, are you comfortable moving forward with this one?"
+        },
+        {
+          "label": "Preference",
+          "text": "Which do you prefer: the [option A] or [option B]?"
+        },
+        {
+          "label": "Ownership",
+          "text": "What do you think your family or team will like most about this?"
+        },
+        {
+          "label": "Uncertain answer",
+          "text": "What is the one thing keeping it from feeling like the right fit?"
+        },
+        {
+          "label": "Advance",
+          "text": "Good. Let's introduce you to service and parts, then we'll review your trade and the numbers."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: The Honest Temperature Check",
+          "instructions": "The customer likes the unit but says, \"I'm not sure yet.\" The salesperson must use a trial close, clarify the concern and choose the correct next step. Success standard: the question is natural and specific, the salesperson listens to the answer, the concern is categorized correctly and the next step fits the concern."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "What is the purpose of a trial close?",
+          "options": [
+            "To measure readiness, uncover hesitation and earn small commitments before presenting numbers",
+            "To force a final decision before the customer leaves",
+            "To replace the demonstration drive",
+            "To get the customer to sign paperwork immediately"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What should happen after a negative response to a trial close?",
+          "options": [
+            "Move straight to numbers to change the momentum",
+            "End the visit and schedule a follow-up call",
+            "Isolate whether the issue is product, timing, trade, price, payment or another decision participant",
+            "Repeat the same question with different words"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "Which of the following are buying signals that create a natural trial-close moment?",
+          "options": [
+            "Checking the time, yawning and stepping away",
+            "Delivery questions, accessory questions and ownership language",
+            "Asking for a business card at the door",
+            "Silence during the walkaround"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "When has the salesperson earned the right to ask a trial close?",
+          "options": [
+            "As soon as the customer picks a unit off the row",
+            "Only after numbers have been presented",
+            "During the initial greeting",
+            "After building value through discovery and demonstration"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 7,
+      "slug": "service-and-parts-tour-introduction",
+      "title": "Service & Parts Tour Introduction",
+      "purpose": "Show the customer how the dealership supports ownership after the sale and strengthen the reason to buy here.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Explain why service and parts belong before finance. Deliver a concise tour or introduction without creating delay. Edify dealership teammates and ownership resources. Connect retention benefits to the customer's intended use."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Preview the purpose: explain that you want to show another reason customers choose the dealership. Walk the customer to service and parts or bring the appropriate teammate to the customer when distance or timing requires. Introduce the advisor or manager by name and role. Edify the employee with one credible reason they are valuable. Highlight scheduling, maintenance, parts availability, accessories, warranty support, pickup/delivery or other approved services. Connect one service or parts capability to the customer's use. Return smoothly to trade and numbers without allowing the interaction to stall."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for skipping the step because the store is busy; use a brief prepared introduction or alternate approved method. Watch for turning the tour into a long department presentation; focus on two or three ownership benefits. Watch for offering services the dealership does not provide; use only verified capabilities. Watch for introducing the customer without context; share the customer's use and likely ownership need."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Transition",
+          "text": "Before we review the numbers, I want to show you another reason customers choose to own through us."
+        },
+        {
+          "label": "Introduction",
+          "text": "[Customer], this is [Name], one of our [service advisors/parts specialists]. [Name] is especially good at helping owners with [specific strength]."
+        },
+        {
+          "label": "Edify customer",
+          "text": "[Name], [Customer] plans to use the unit for [use], so [service/accessory need] will be important."
+        },
+        {
+          "label": "Ownership value",
+          "text": "This gives you a direct contact after the sale instead of sending you to a generic call center."
+        },
+        {
+          "label": "Return",
+          "text": "Thank you, [Name]. [Customer], let's take a look at your trade and put the complete picture together."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Why Buy Here?",
+          "instructions": "The salesperson has two minutes to introduce service and parts and connect one capability to the customer's stated use. Success standard: the purpose is explained, the teammate is introduced by name, one relevant ownership benefit is connected and the transition back to the process is smooth."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Why does the Service & Parts Tour occur before finance?",
+          "options": [
+            "Because the finance office is usually busy at that point",
+            "It shows how the dealership supports ownership after the sale and strengthens the reason to buy here before numbers are finalized",
+            "So the service department can inspect the trade",
+            "It gives the manager time to prepare paperwork"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "What makes edification of a teammate credible?",
+          "options": [
+            "Calling them the best in the state",
+            "Listing every service the department offers",
+            "One credible, specific reason they are valuable to owners",
+            "Mentioning how long they have worked there"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "How long should the service and parts introduction take?",
+          "options": [
+            "It should be concise, about two minutes, without creating delay",
+            "As long as the customer keeps asking questions",
+            "At least fifteen minutes to build full value",
+            "It should be skipped when the store is busy"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What should the salesperson share when introducing the customer to a service or parts teammate?",
+          "options": [
+            "The negotiated price of the unit",
+            "The customer's credit situation",
+            "Nothing, the introduction should stay generic",
+            "The customer's use and likely ownership need"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 8,
+      "slug": "trade-appraisal-and-assessment",
+      "title": "Trade Appraisal & Assessment",
+      "purpose": "Collect accurate information, involve the customer and protect trust while the dealership determines market value.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Separate payoff from market value. Conduct a professional walkaround and condition review. Capture complete trade information in the approved system. Use neutral language and avoid devaluing games."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Ask the customer to tell you what they like about the trade and what a future buyer should know. Enter year, make, model, identification number, mileage/hours, equipment and ownership information in the CRM or appraisal tool. Ask whether there is a payoff and identify the lender; explain that payoff does not determine market value. Walk around the trade with the customer. Note visible damage, wear, accessories, tires, keys, records and missing items. Ask the customer what they would address first if selling it to a close friend. Collect photos and required documentation according to dealership policy. Present the complete information to the appraiser or manager without promising a value."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for promising a value before the appraisal; set the expectation that the appraiser determines the supported value. Watch for using payoff as proof of value; explain equity or negative equity only after both facts are known. Watch for criticizing the customer's trade; document condition neutrally and respectfully. Watch for completing the appraisal without customer involvement; use the walkaround to gather information and reduce surprises."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Invite ownership story",
+          "text": "Tell me what you have liked most about this unit and anything a future owner should know."
+        },
+        {
+          "label": "Payoff",
+          "text": "Is it paid for, or is there a lender we will need to contact for an exact payoff?"
+        },
+        {
+          "label": "Separate value",
+          "text": "The payoff and market value are separate. We'll calculate both so you can see the complete position clearly."
+        },
+        {
+          "label": "Condition",
+          "text": "Let's walk it together so we record the equipment and condition accurately."
+        },
+        {
+          "label": "Customer insight",
+          "text": "If you were selling it to a close friend, what is the first thing you would tell them to address?"
+        },
+        {
+          "label": "No promise",
+          "text": "I'll provide the full information to our appraiser and bring you the value we can support in today's market."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Trade Without Tension",
+          "instructions": "The customer owes more than they expect the trade to be worth and says, \"I need payoff.\" The salesperson must separate payoff, value and structure without arguing. Success standard: payoff and value are explained separately, condition language remains neutral, no unsupported value is promised and the customer understands the next step."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Who determines the trade value?",
+          "options": [
+            "The salesperson based on online guides",
+            "The customer based on their payoff",
+            "The appraiser or manager based on current market and condition",
+            "The lender that holds the loan"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "How do payoff and market value differ?",
+          "options": [
+            "Payoff is what is owed to the lender while market value is what the dealership can support; they are separate figures",
+            "They are the same number when the loan is current",
+            "Payoff is always lower than market value",
+            "Market value is set by the lender and payoff is set by the appraiser"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "Why should the customer participate in the condition walkaround?",
+          "options": [
+            "So the customer can negotiate the value on the spot",
+            "It is required by law in most states",
+            "So the salesperson can point out every flaw to lower the value",
+            "It gathers accurate information and reduces surprises later"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "question": "What should the salesperson promise about the trade value during the walkaround?",
+          "options": [
+            "A range based on similar units on the lot",
+            "No value; provide the full information to the appraiser and bring back the value the dealership can support",
+            "At least the payoff amount",
+            "The average of the major online guides"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 9,
+      "slug": "present-numbers",
+      "title": "Present Numbers",
+      "purpose": "Present the complete proposal clearly, confidently and in the value context already established.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Prepare before presenting the proposal. Use consistent terminology and presentation order. Explain price, trade, cash investment and payment options accurately. Ask for a clear commitment and return to the manager with useful information."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Before returning, review the proposal with the manager and understand every figure. Reconnect to the customer's selected unit and top reasons for choosing it. Present the selling price and approved disclosures. Present the trade value, payoff and equity position separately. Present approved cash-investment and payment choices or explain the next finance step, depending on dealership process. Use a pen or visual guide to control the presentation without hiding information. Ask which option works best or ask directly for authorization to proceed. When the customer resists, listen, clarify the reason and return to the manager with a commitment or specific concern."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for apologizing for the numbers before presenting them; present calmly and let the customer respond. Watch for talking continuously after asking for commitment; pause and give the customer time to process. Watch for changing figures without manager approval; return with the exact concern and commitment. Watch for focusing only on payment; keep price, trade, cash investment and payment structure clear and separate."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Reconnect value",
+          "text": "You selected this unit because it gives you [priority one], [priority two] and [priority three]. Here is the complete proposal."
+        },
+        {
+          "label": "Price",
+          "text": "The approved selling price is [amount], with the required fees and taxes shown separately here."
+        },
+        {
+          "label": "Trade",
+          "text": "Your trade value is [amount]. The verified payoff is [amount], which creates [equity/negative equity] of [amount]."
+        },
+        {
+          "label": "Options",
+          "text": "Here are the approved structures. Which one is closest to the responsible range you had in mind?"
+        },
+        {
+          "label": "Direct ask",
+          "text": "If this works for you, authorize it here and we'll move to the next step."
+        },
+        {
+          "label": "Clarify resistance",
+          "text": "Help me understand what part is not working: the unit, the overall price, the trade position, the cash investment or the monthly structure?"
+        },
+        {
+          "label": "Return to manager",
+          "text": "If we can resolve [specific issue], are you prepared to move forward today?"
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Clear Proposal, Clear Ask",
+          "instructions": "The customer likes the unit but reacts to the monthly option. The salesperson must identify whether the issue is payment, cash investment, term, trade or overall value. Success standard: the proposal is explained in order, figures are not improvised, the salesperson pauses after the ask and the concern is isolated before returning to the manager."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "What should happen before the salesperson returns to the customer with numbers?",
+          "options": [
+            "Review the proposal with the manager and understand every figure",
+            "Round the figures to make them easier to present",
+            "Prepare a discount to offer if the customer hesitates",
+            "Ask the customer what payment they were hoping for"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "Why must payment and total price remain clear and separate?",
+          "options": [
+            "So the presentation takes less time",
+            "Focusing only on payment hides the full position; price, trade, cash investment and payment structure must each stay clear",
+            "Because customers only care about the monthly payment",
+            "So the manager can adjust the price later without questions"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "What should the salesperson bring back to the manager when the customer resists?",
+          "options": [
+            "A lower figure the salesperson already promised",
+            "A general sense that the customer is not happy",
+            "A commitment or the specific concern, clarified and isolated",
+            "A request to switch the customer to a cheaper unit"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "What should the salesperson do immediately after asking for commitment?",
+          "options": [
+            "Keep explaining the value of the unit",
+            "Offer to check with the manager for a better number",
+            "Restate the proposal from the beginning",
+            "Pause and give the customer time to process"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 10,
+      "slug": "close-the-sale",
+      "title": "Close the Sale",
+      "purpose": "Turn readiness into a clear decision, resolve legitimate concerns and ask confidently for commitment.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Distinguish a question, concern, objection and stall. Use the J|13 Objection Loop. Apply closing techniques at the appropriate moment. Use manager assistance without abandoning ownership of the customer."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Ask for the commitment clearly. Listen to the complete response without interrupting. Clarify the real concern and isolate it from other issues. Respond with facts, value, options or the appropriate teammate. Confirm the concern is resolved. Reclose using the next appropriate commitment. Use a manager turnover when additional authority, perspective or relationship support is needed. Document the outcome and next step in the CRM."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for answering before understanding; clarify and isolate first. Watch for using a memorized comeback that ignores the customer; respond to the actual concern in the customer's language. Watch for creating false scarcity; use only real availability or expiration information. Watch for giving up after the first no; respectfully clarify whether the answer is final or based on a solvable concern."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Direct close",
+          "text": "You have selected the right unit and the structure works. Let's complete the paperwork and prepare it for delivery."
+        },
+        {
+          "label": "Clarify",
+          "text": "When you say you need to think about it, what specifically do you want to think through?"
+        },
+        {
+          "label": "Isolate",
+          "text": "Other than [concern], is there anything else keeping you from moving forward?"
+        },
+        {
+          "label": "Confirm",
+          "text": "Does that answer the concern completely?"
+        },
+        {
+          "label": "Reclose",
+          "text": "Good. Then let's move forward with [selected option]."
+        },
+        {
+          "label": "Manager TO",
+          "text": "I want to make sure we have explored every responsible option. Let me bring [Manager] back in with the exact concern you shared."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Clarify Before You Answer",
+          "instructions": "The customer says, \"I need to think about it.\" The salesperson must discover whether the issue is product fit, timing, another decision participant, trade or money. Success standard: the customer finishes speaking, at least two clarifying questions are used, the concern is isolated, the response matches the real issue and the salesperson recloses."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "What are the five steps of the J|13 Objection Loop in order?",
+          "options": [
+            "Listen, Clarify, Respond, Confirm, Reclose",
+            "Ask, Argue, Adjust, Agree, Advance",
+            "Clarify, Listen, Reclose, Respond, Confirm",
+            "Present, Pause, Push, Pivot, Close"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What makes urgency legitimate?",
+          "options": [
+            "Telling the customer another buyer is coming in later",
+            "Setting a deadline to force a same-day decision",
+            "Using only real availability or expiration information",
+            "Any urgency is acceptable if it closes the sale"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "When should a manager turnover occur?",
+          "options": [
+            "Only after the customer has said no three times",
+            "Whenever the salesperson wants a break",
+            "Never, the salesperson should always close alone",
+            "When additional authority, perspective or relationship support is needed"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "question": "What should the salesperson do before responding to an objection?",
+          "options": [
+            "Deliver the memorized comeback for that objection",
+            "Listen to the complete response, then clarify and isolate the real concern",
+            "Offer a discount to remove the objection",
+            "Bring the manager in immediately"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 11,
+      "slug": "finance",
+      "title": "Finance",
+      "purpose": "Create a professional handoff that gives every qualified customer a complete opportunity to review protection and payment options.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Explain the purpose of the business office accurately. Complete a warm handoff with useful customer context. Avoid pre-selling or disqualifying finance products. Support cash-conversion conversations ethically and consistently."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Confirm the deal is complete and required information is accurate. Contact the business manager according to dealership procedure before bringing the customer in. Brief the business manager on use, ownership priorities, decision participants, trade, timing and any questions already asked. Introduce the business manager by name and role. Explain that the manager will review paperwork, lender options when applicable and available ownership-protection products. Do not pre-sell price, coverage or eligibility. Do not say \"you won't want that.\" Prepare the unit, accessories, fuel/charge, paperwork and delivery while finance completes the interview. After finance, complete an exit check and resolve any unanswered operational questions."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for calling finance \"the paperwork person\"; explain the business manager's advisory and ownership role. Watch for promising a rate or payment; refer exact approval questions to finance. Watch for prejudging product interest; give every qualified customer a complete presentation. Watch for dropping the customer at finance and taking another customer; prepare delivery and complete the exit experience."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Set expectation",
+          "text": "The next step is with [Business Manager], who will review the paperwork and all available ownership and payment options with you."
+        },
+        {
+          "label": "Warm introduction",
+          "text": "[Customer], this is [Name], our business manager. [Name], [Customer] will use the unit for [use] and especially values [priority]."
+        },
+        {
+          "label": "Cash customer",
+          "text": "Even though you plan to pay cash, [Name] will review the complete options so you can decide whether keeping some cash available makes sense for you."
+        },
+        {
+          "label": "Rate question",
+          "text": "The business manager will compare the approved lender options and explain the exact rate and terms. I do not want to guess before that review is complete."
+        },
+        {
+          "label": "Product question",
+          "text": "[Name] will explain eligibility, coverage, cost and exclusions so you can make an informed choice."
+        },
+        {
+          "label": "Post-finance check",
+          "text": "Was everything explained clearly, and is there anything you want me to help clarify before delivery?"
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: The Warm Handoff",
+          "instructions": "The customer is paying cash and says they do not need finance. The salesperson must explain the complete review without pressure or promising value. Success standard: the finance role is explained accurately, customer priorities are transferred, no product or approval is promised and the salesperson states what happens during finance."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "What information belongs in the finance brief?",
+          "options": [
+            "The customer's negotiating style and weak points",
+            "Use, ownership priorities, decision participants, trade, timing and any questions already asked",
+            "Only the final selling price",
+            "The products the salesperson thinks the customer will buy"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "What should a salesperson say when asked for an exact rate?",
+          "options": [
+            "Quote the best rate seen recently to keep the customer engaged",
+            "Estimate a rate based on the customer's appearance and trade",
+            "Say the rate does not matter compared to the payment",
+            "Explain that the business manager will compare approved lender options and give the exact rate rather than guessing"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "question": "Why should cash customers still receive a complete finance review?",
+          "options": [
+            "So they can decide whether keeping some cash available makes sense; every qualified customer deserves the complete presentation",
+            "Because cash deals are not allowed at most dealerships",
+            "So the dealership can add fees to the transaction",
+            "To delay delivery while the unit is prepared"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "What should the salesperson do while the customer is in the finance office?",
+          "options": [
+            "Take the next customer on the floor",
+            "Sit in on the finance interview",
+            "Prepare the unit, accessories, fuel/charge, paperwork and delivery",
+            "Start the follow-up calls for the day"
+          ],
+          "answerIndex": 2
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 12,
+      "slug": "delivery-and-follow-up",
+      "title": "Delivery & Follow-Up",
+      "purpose": "Complete the ownership experience, prevent avoidable confusion and create the first repeat-and-referral opportunity.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Deliver the unit with a consistent checklist. Confirm paperwork, product operation and ownership resources. Set the first follow-up expectation before the customer leaves. Use a purposeful sold and unsold follow-up cadence."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Complete the dealership delivery checklist before presenting the unit. Confirm accessories, cleanliness, fuel/charge, keys, manuals, registration items and promised work. Review operation, safety, maintenance, warranty basics and service contact information. Ask the customer to demonstrate critical controls when appropriate. Capture the delivery moment according to customer permission and dealership policy. Conduct an exit interview: clarity, unanswered questions, finance experience and referral opportunity. Set the first follow-up expectation and preferred communication channel. Complete CRM notes and all scheduled tasks before closing the record."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for rushing delivery because another customer arrived; complete the current customer experience or arrange an approved team handoff. Watch for giving a generic \"checking in\" follow-up; call with a specific purpose, update, question or piece of value. Watch for failing to record contact attempts; use the CRM as the system of record. Watch for continuing after a clear no-contact request; honor the request and follow policy."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Delivery agenda",
+          "text": "Before you leave, we'll verify the unit, review the controls and maintenance items, and make sure every promise is complete."
+        },
+        {
+          "label": "Teach-back",
+          "text": "Show me how you would use [critical control] so I know I explained it clearly."
+        },
+        {
+          "label": "Exit check",
+          "text": "Was everything explained clearly in the business office and throughout the process?"
+        },
+        {
+          "label": "First follow-up",
+          "text": "I'll contact you tomorrow to make sure the first use went smoothly. Do you prefer a call or text?"
+        },
+        {
+          "label": "Referral",
+          "text": "Who do you know who would appreciate the same kind of help when they are ready?"
+        },
+        {
+          "label": "Unsold follow-up",
+          "text": "I'm following up because you said [priority] was the most important. I have an update that may help you decide."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Delivery Teach-Back",
+          "instructions": "The salesperson must deliver a unit, explain one safety-critical feature and use teach-back before setting the next-day follow-up. Success standard: the checklist is used, the critical feature is explained accurately, the customer demonstrates understanding and the follow-up time and channel are set."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Why is teach-back useful at delivery?",
+          "options": [
+            "It confirms the customer understands critical controls and that the explanation was clear",
+            "It saves the salesperson from explaining the controls",
+            "It is a legal requirement for every delivery",
+            "It gives the customer homework before they leave"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "When should the first sold follow-up be scheduled?",
+          "options": [
+            "Within thirty days of delivery",
+            "Only if the customer reports a problem",
+            "The next day, with the time and preferred channel set before the customer leaves",
+            "At the first scheduled maintenance visit"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "When should unsold follow-up stop or change?",
+          "options": [
+            "After the second unanswered voicemail",
+            "Never, persistence always wins",
+            "When the manager reassigns the lead",
+            "After a clear no-contact request, which must be honored while following policy"
+          ],
+          "answerIndex": 3
+        },
+        {
+          "question": "What makes a follow-up call better than a generic \"checking in\" call?",
+          "options": [
+            "Calling at the same time every day",
+            "A specific purpose, update, question or piece of value",
+            "Keeping the call under thirty seconds",
+            "Leaving the same voicemail on every attempt"
+          ],
+          "answerIndex": 1
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    },
+    {
+      "number": 13,
+      "slug": "prospecting-and-referrals",
+      "title": "Prospecting & Referrals",
+      "purpose": "Create future opportunities through disciplined outreach, relationships, CRM activity and community visibility.",
+      "learn": [
+        {
+          "heading": "What Success Looks Like",
+          "body": "Build a daily prospecting rhythm. Use the CRM to manage outbound activity and long-term opportunities. Ask for referrals naturally throughout the ownership cycle. Apply the process to commercial and community prospects."
+        },
+        {
+          "heading": "Execution Checklist",
+          "body": "Set daily activity goals for calls, two-way contacts, appointments, confirmations and shows. Work the highest-value lists first: prior-day unsold, active leads, missed appointments, orphan owners, previous customers, service opportunities and aged prospects. Use multiple approved channels: phone, text, email, video and social content. Ask for appointments with a specific reason and two time choices. Confirm appointments, record them in the CRM and appointment board, and involve the manager. Ask for referrals after value has been created, at delivery, after a positive follow-up and during ownership milestones. For commercial prospects, conduct a needs analysis, record equipment cycles and schedule a consistent follow-up plan. Review results daily and adjust the list, message or offer without abandoning the activity."
+        },
+        {
+          "heading": "Self-Coaching",
+          "body": "Watch for only prospecting when traffic is slow; schedule protected daily outreach time. Watch for leaving generic voicemails with no reason to respond; reference the customer, unit, timing or useful update. Watch for counting unlogged activity; record the work in the CRM. Watch for asking for referrals before creating value; earn the referral through a strong experience, then ask directly."
+        }
+      ],
+      "wordTracks": [
+        {
+          "label": "Previous customer",
+          "text": "I was reviewing your ownership file and wanted to ask how [unit] is working for you. Has anything changed in how you use it?"
+        },
+        {
+          "label": "Service opportunity",
+          "text": "While your unit is here, would it be useful to see what your current trade position looks like?"
+        },
+        {
+          "label": "Appointment ask",
+          "text": "I have two good times to show you the update: today at 4:30 or tomorrow at 10:15. Which works better?"
+        },
+        {
+          "label": "Confirmation",
+          "text": "I have you scheduled for [time] with [unit] ready. I'll confirm with you before you leave for the dealership."
+        },
+        {
+          "label": "Referral",
+          "text": "Who in your circle is likely to need something similar in the next six months?"
+        },
+        {
+          "label": "Commercial",
+          "text": "I'm not here to sell you something today. I want to understand your equipment cycle, current challenges and what would make a future conversation useful."
+        }
+      ],
+      "practice": [
+        {
+          "title": "Practice Lab: Appointment With a Reason",
+          "instructions": "The salesperson receives an aged lead with no recent response. Create a call, voicemail, text and short video message that share one useful reason to reconnect. Success standard: the message is personal and relevant, the appointment ask is specific, two time choices are offered and the CRM next step is clear."
+        }
+      ],
+      "knowledgeCheck": [
+        {
+          "question": "Which prospecting lists should be worked first?",
+          "options": [
+            "The oldest leads in the CRM regardless of status",
+            "Random cold lists purchased from vendors",
+            "The highest-value lists: prior-day unsold, active leads, missed appointments, orphan owners, previous customers, service opportunities and aged prospects",
+            "Only internet leads from the last hour"
+          ],
+          "answerIndex": 2
+        },
+        {
+          "question": "What makes an appointment request specific?",
+          "options": [
+            "A specific reason for the visit and two time choices",
+            "Asking the customer to stop by whenever it is convenient",
+            "Mentioning that the dealership is open seven days a week",
+            "Promising the lowest price in the market"
+          ],
+          "answerIndex": 0
+        },
+        {
+          "question": "When are the best moments to ask for a referral?",
+          "options": [
+            "During the first phone contact with a new lead",
+            "After value has been created, at delivery, after a positive follow-up and during ownership milestones",
+            "Only after the customer has bought at least twice",
+            "Before presenting numbers so the customer feels invested"
+          ],
+          "answerIndex": 1
+        },
+        {
+          "question": "How should a salesperson open a first conversation with a commercial prospect?",
+          "options": [
+            "Present the current commercial inventory and pricing",
+            "Ask for the fleet manager's budget for the year",
+            "Offer a same-day demo of the newest unit",
+            "Explain you are not there to sell today and that you want to understand their equipment cycle, current challenges and what would make a future conversation useful"
+          ],
+          "answerIndex": 3
+        }
+      ],
+      "commitment": "On my next customer, I will apply this specific behavior."
+    }
+  ],
+  "objectionLoop": {
+    "sequence": ["Listen", "Clarify", "Respond", "Confirm", "Reclose"],
+    "description": "Understand before you answer. Listen to the complete statement. Clarify what the customer specifically means. Respond with facts, value, options or the right teammate. Confirm the concern is resolved. Reclose by asking for the next commitment.",
+    "examples": [
+      {
+        "objection": "I need to think about it.",
+        "response": "When you say you need to think about it, what specifically do you want to think through?"
+      },
+      {
+        "objection": "I am just looking.",
+        "response": "That's completely fine. Let's make your looking productive. What category or use brought you in?"
+      },
+      {
+        "objection": "I want payoff for my trade.",
+        "response": "The payoff and market value are separate. We'll calculate both so you can see the complete position clearly."
+      },
+      {
+        "objection": "What will my payment or rate be?",
+        "response": "The business manager will compare the approved lender options and explain the exact rate and terms. I do not want to guess before that review is complete."
+      },
+      {
+        "objection": "I'm not sure yet.",
+        "response": "What is the one thing keeping it from feeling like the right fit?"
+      },
+      {
+        "objection": "Something is not working in the proposal.",
+        "response": "Help me understand what part is not working: the unit, the overall price, the trade position, the cash investment or the monthly structure?"
+      }
+    ]
+  },
+  "closingTechniques": [
+    {
+      "name": "Assumptive Close",
+      "description": "Move to the next logical ownership step after clear readiness.",
+      "example": "Let's prepare the paperwork so we can have this ready by Friday."
+    },
+    {
+      "name": "Summary Close",
+      "description": "Recap the strongest customer-specific reasons before asking.",
+      "example": "You are getting the capacity, comfort and support you prioritized. Let's move forward."
+    },
+    {
+      "name": "Alternative Choice Close",
+      "description": "Offer two real next-step choices.",
+      "example": "Would you prefer delivery Thursday afternoon or Friday morning?"
+    },
+    {
+      "name": "Sharp-Angle Close",
+      "description": "Turn a requested condition into a commitment.",
+      "example": "If the manager approves that, are you ready to complete the purchase?"
+    },
+    {
+      "name": "If-I-Could-Would-You",
+      "description": "Confirm one isolated issue is the only obstacle.",
+      "example": "If we can resolve the trade difference, would you move forward?"
+    },
+    {
+      "name": "Legitimate Urgency",
+      "description": "Explain a real deadline, availability or expiration. Never manufacture urgency.",
+      "example": "This rebate expires on [date]. Would you like to secure it while available?"
+    }
+  ]
+}
