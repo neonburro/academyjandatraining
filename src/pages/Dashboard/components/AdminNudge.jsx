@@ -1,11 +1,12 @@
 // src/pages/Dashboard/components/AdminNudge.jsx
-// STATUS: stable | UPDATED: 2026-08-02
+// STATUS: active | UPDATED: 2026-08-02
 // LOG:
-//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
-// Admins only (Jazz, Tyler). A quiet path to the next real job: setting up the
-// academy content. Salespeople never see this.
+//   2026-08-02  Rewritten: the old copy claimed the plan was placeholder,
+//               which is no longer true. Now points at the live launch
+//               checklist in the Command center.
+// Admins only (Jazz, Tyler). Quiet pointer to the remaining launch work.
 
-import { Box, HStack, VStack, Text, Button } from '@chakra-ui/react'
+import { Box, HStack, Text, Button } from '@chakra-ui/react'
 import { Link as RouterLink } from 'react-router-dom'
 
 export default function AdminNudge() {
@@ -14,14 +15,14 @@ export default function AdminNudge() {
       <HStack justify="space-between" flexDir={{ base: 'column', sm: 'row' }} align={{ base: 'stretch', sm: 'center' }} spacing={4}>
         <Box>
           <Text fontSize="sm" fontWeight={600} color="ink" mb={1}>
-            You are viewing the salesperson preview.
+            You are seeing the live member experience.
           </Text>
           <Text fontSize="sm" color="inkMuted" lineHeight={1.6} maxW="60ch">
-            This is what your team will see each day. The plan is placeholder until courses are added. Head to the admin area to build the real curriculum.
+            The curriculum, checks and coach are running on real content from the 2026 manuals. The Command center tracks the last switches to flip.
           </Text>
         </Box>
         <Button as={RouterLink} to="/admin/" size="md" flexShrink={0}>
-          Set up the academy
+          Command center
         </Button>
       </HStack>
     </Box>

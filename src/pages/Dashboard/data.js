@@ -63,6 +63,9 @@ export function buildItinerary(userId) {
     .slice(0, 3)
     .map((s, i) => ({ day: DAY_LABELS[i], label: `Step ${s.number}: ${s.title}` }))
 
+  const isNewUser =
+    progress.completedCount === 0 && progress.steps.every((s) => s.status === 'not_started')
+
   return {
     plan,
     course: {
@@ -73,6 +76,8 @@ export function buildItinerary(userId) {
     upNext,
     streakDays: progress.streakDays,
     currentStep: current,
+    openCommitments: progress.openCommitments,
+    isNewUser,
     done: !current,
   }
 }

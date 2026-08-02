@@ -13,7 +13,12 @@ import {
   useDisclosure, Divider
 } from '@chakra-ui/react'
 import { ChevronLeft, ChevronRight, ExternalLink } from 'lucide-react'
-import { SEED_EVENTS, EVENT_TYPES, formatEventDate, formatEventTime, isSameDay } from '../data/seed'
+import { EVENT_TYPES, formatEventDate, formatEventTime, isSameDay } from '../data/seed'
+
+// Real events arrive with the Phase 2 events table (group coaching calls,
+// live sessions, onsite visits). Until then the calendar is honestly empty
+// rather than dressed with seed data.
+const EVENTS = []
 
 const DAY_NAMES = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
 
@@ -162,7 +167,7 @@ function EventDetail({ event, onClose }) {
 
 function AgendaList({ onEventClick }) {
   const now = new Date()
-  const upcoming = SEED_EVENTS
+  const upcoming = EVENTS
     .filter((e) => new Date(e.endAt) >= now)
     .sort((a, b) => new Date(a.startAt) - new Date(b.startAt))
 
@@ -347,7 +352,7 @@ export default function CalendarPage() {
           {Array.from({ length: cells.length / 7 }).map((_, weekIdx) => (
             <Flex key={weekIdx} borderBottom={weekIdx < cells.length / 7 - 1 ? '1px solid' : 'none'} borderColor="line">
               {cells.slice(weekIdx * 7, weekIdx * 7 + 7).map((cell, idx) => {
-                const dayEvents = SEED_EVENTS.filter((e) => isSameDay(new Date(e.startAt), cell.date))
+                const dayEvents = EVENTS.filter((e) => isSameDay(new Date(e.startAt), cell.date))
                 const isToday = isSameDay(cell.date, today)
                 return (
                   <Box
