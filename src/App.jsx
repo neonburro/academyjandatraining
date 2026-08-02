@@ -1,7 +1,11 @@
 // src/App.jsx
 // STATUS: active | UPDATED: 2026-08-02
 // LOG:
-//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-02  Progress hydration wired: after auth resolves, remote training
+//               progress is pulled and merged into the local cache before the
+//               app shell renders, so every page reads merged state. Bounded
+//               by a 3s timeout inside hydrateProgress; a slow or absent
+//               network never blocks startup. Header standardized (e765830).
 //   2026-08-01  Nav trio routes: /coach/ added; roadmap routes /courses/roadmap/ and :slug/
 // NEXT: Admin route + /team/ manager view land in Phase 2
 // Top-level routes. Public: /login/, /signup/, /reset-password/.
@@ -9,9 +13,11 @@
 // /courses/roadmap/:slug/ (the 13-step path), /coach/, /calendar/, /team/,
 // /settings/.
 
+import { useEffect, useState } from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import { Box, Spinner, Center } from '@chakra-ui/react'
 import { useAuth } from './hooks/useAuth'
+import { hydrateProgress } from './lib/progressStore'
 import ProtectedRoute from './components/auth/ProtectedRoute'
 import AppShell from './components/layout/AppShell'
 import Login from './pages/Login'
@@ -27,9 +33,25 @@ import Coach from './pages/Coach'
 import Settings from './pages/Settings'
 
 export default function App() {
-  const { loading } = useAuth()
+  const { loading, user } = useAuth()
+  const [hydrated, setHydrated] = useState(false)
 
-  if (loading) {
+  useEffect(() => {
+    let alive = true
+    if (!user?.id) {
+      setHydrated(true)
+      return undefined
+    }
+    setHydrated(false)
+    hydrateProgress(user.id).finally(() => {
+      if (alive) setHydrated(true)
+    })
+    return () => {
+      alive = false
+    }
+  }, [user?.id])
+
+  if (loading || !hydrated) {
     return (
       <Center minH="100vh" bg="bg">
         <Spinner size="lg" color="ink" thickness="3px" />

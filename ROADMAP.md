@@ -1,6 +1,6 @@
 # J|13 Dealer Academy — Living Roadmap
 
-Last updated 2026-08-02. Phase 1 checkpoint committed as e765830.
+Last updated 2026-08-02. Phase 1 checkpoint e765830; DB wiring prepped (progressRemote, seed 0004).
 
 This is the working build plan. It evolves as the product does. The governing test for every
 feature comes from the Developer Context doc, page 19: does it help an employee learn the
@@ -27,8 +27,11 @@ The 13-step Roadmap to the Sale becomes the heart of the app, extracted verbatim
 
 Progress becomes real data a manager can inspect.
 
-- [ ] Tyler runs migration 0003 against fiowfatqsqagehngburd (or fixes the MCP connector org)
-- [ ] Progress store swaps localStorage for Supabase tables (interface already matches)
+- [ ] Tyler runs migrations 0003 then 0004 against fiowfatqsqagehngburd (SQL editor), or
+      re-scopes the Supabase MCP connector to the Janda org so Claude can run them
+- [x] Progress store write-through + login hydration wired (progressRemote.js); localStorage
+      stays the sync cache, Supabase is the durable copy, auto-detects when 0003 is live
+- [x] Seed migration 0004 generated from src/content (13 steps, 52 questions, idempotent)
 - [ ] Manager view: team roster with per-step status, knowledge check scores, commitments
 - [ ] Manager sign-off flow: role-play evaluation criteria from the Trainer Edition
 - [ ] Streaks and activity computed from real events
