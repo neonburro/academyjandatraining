@@ -1,4 +1,9 @@
 // netlify/functions/coach.js
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: Anthropic-powered coach, cache-stable system prompt, J13 guardrails
+// NEXT: Rate limiting + transcript persistence in Phase 2
 // The J13 Coach. Calls the Anthropic API with a system prompt grounded in the
 // master J13 curriculum. Per Jazz's guardrails the coach never invents product
 // facts, rates, approvals, legal rules or dealership policy, and it always

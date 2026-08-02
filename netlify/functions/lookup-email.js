@@ -1,4 +1,7 @@
 // netlify/functions/lookup-email.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Server-side username to email lookup. Uses service_role key to bypass RLS,
 // since the user is not yet authenticated when calling this. Returns generic
 // 'not found' rather than leaking which usernames exist.

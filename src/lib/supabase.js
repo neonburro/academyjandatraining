@@ -1,4 +1,7 @@
 // src/lib/supabase.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Singleton Supabase client for the Academy frontend.
 // Realtime is explicitly disabled because we are not using it
 // and it caused production crashes on Node 20 in other portfolio repos.

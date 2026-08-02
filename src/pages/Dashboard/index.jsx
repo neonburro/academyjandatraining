@@ -1,4 +1,8 @@
 // src/pages/Dashboard/index.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Itinerary derived from real Roadmap position via buildItinerary
 // The daily itinerary. Time-aware greeting, today's plan, momentum
 // (streak + Roadmap progress), up-next and the live coach card. Everything is
 // derived from the user's real position on the 13-step Roadmap via

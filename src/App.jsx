@@ -1,4 +1,9 @@
 // src/App.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Nav trio routes: /coach/ added; roadmap routes /courses/roadmap/ and :slug/
+// NEXT: Admin route + /team/ manager view land in Phase 2
 // Top-level routes. Public: /login/, /signup/, /reset-password/.
 // Protected: /dashboard/, /courses/ (Training hub), /courses/roadmap/ and
 // /courses/roadmap/:slug/ (the 13-step path), /coach/, /calendar/, /team/,

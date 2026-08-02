@@ -1,4 +1,7 @@
 // src/pages/Signup.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Signup placeholder. Real signup is gated by invite from Jazz's admin,
 // not open public registration. This page shows that messaging.
 

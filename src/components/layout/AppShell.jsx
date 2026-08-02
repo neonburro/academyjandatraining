@@ -1,4 +1,7 @@
 // src/components/layout/AppShell.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Outer shell for all authenticated routes. Sidebar on desktop, fixed bottom
 // nav on mobile, main content area between them.
 //

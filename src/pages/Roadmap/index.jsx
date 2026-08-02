@@ -1,4 +1,9 @@
 // src/pages/Roadmap/index.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: vertical 13-step journey, sequential unlock, current-step anchor
+// NEXT: Swap getProgress to Supabase-backed store after migration 0003 runs
 // The Roadmap to the Sale. Vertical 13-step journey, mobile-first. Steps
 // unlock sequentially; the current step is the visual anchor. Content comes
 // from src/content/steps.js, progression from the local-first progress store.

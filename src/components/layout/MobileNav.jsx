@@ -1,4 +1,8 @@
 // src/components/layout/MobileNav.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Tabs now Today / Training / Coach + More sheet; safe-area padding
 // Fixed bottom nav for mobile. Mirrors the sidebar language so mobile and
 // desktop use the same words: Today, Training, Coach. The fourth slot is
 // More, which opens a bottom sheet (Calendar, Team, Settings, Admin, Log out).

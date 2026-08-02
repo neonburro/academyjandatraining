@@ -1,4 +1,8 @@
 // src/pages/Courses.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Roadmap flagship card + coming-soon Finance and Management tracks
 // Training hub. The Roadmap to the Sale is the flagship track and visual
 // anchor; future tracks (Finance, Management) render as coming-soon cards so
 // the hub communicates the full J13 scope without shipping shallow shells.

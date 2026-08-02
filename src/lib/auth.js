@@ -1,4 +1,7 @@
 // src/lib/auth.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Auth helpers. signInWithIdentifier accepts either a username or an email.
 // Password reset uses Supabase's built-in flow with a custom redirect URL.
 //

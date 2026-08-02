@@ -1,4 +1,7 @@
 // src/pages/Dashboard/components/AdminNudge.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Admins only (Jazz, Tyler). A quiet path to the next real job: setting up the
 // academy content. Salespeople never see this.
 

@@ -1,4 +1,9 @@
 // src/lib/progressStore.js
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: local-first progress, shapes mirror migration 0003 tables
+// NEXT: Swap localStorage for Supabase once 0003 runs; interface stays identical
 // Local-first training progress. Persists to localStorage keyed by user id so
 // the app works today, before migration 0003 runs on the live Supabase
 // project. The record shapes mirror the step_progress, knowledge_check_attempts

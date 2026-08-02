@@ -1,4 +1,8 @@
 // src/pages/Dashboard/components/CoachCard.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Links to real /coach/ with current-step context
 // The door to the live J13 Coach. Personalizes the invitation with the user's
 // current step so the nudge is specific, then routes to /coach/.
 

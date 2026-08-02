@@ -1,4 +1,7 @@
 // src/pages/Settings/components/SessionSection.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Sign out of this session.
 
 import { useNavigate } from 'react-router-dom'

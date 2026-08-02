@@ -1,4 +1,7 @@
 // src/hooks/useAuth.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // React hook that exposes the current authenticated user, profile, and loading state.
 // Subscribes to Supabase auth state changes.
 

@@ -1,4 +1,8 @@
 // src/components/layout/Sidebar.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Coach added to daily items; Training label for /courses/
 // Left sidebar nav. Logo at top, four daily items: Today, Courses, Calendar,
 // Team. Insights folded into the dashboard AI coach. Clean black active state.
 //

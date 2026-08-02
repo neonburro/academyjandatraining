@@ -1,4 +1,8 @@
 // src/data/seed.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+// NEXT: Superseded by src/content once Supabase seeding lands; review for deletion
 // Stub data for the dashboard, calendar, team, and insights views. Single
 // source of truth so swapping in real Supabase data later means changing
 // imports in one place, not rewriting components.

@@ -1,4 +1,8 @@
 // src/pages/Dashboard/components/TodaysPlan.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Renders derived itinerary items with route links
 // The itinerary. Ordered cards for today: lesson, quiz, reflection. Each item
 // carries a `to` route and navigates on tap. Data comes from buildItinerary,
 // derived from the user's real Roadmap position.

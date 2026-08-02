@@ -1,4 +1,8 @@
 // netlify/functions/lib/coachKnowledge.js
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: condensed approved J13 knowledge for the coach prompt
 // GENERATED from src/content/steps.json. Do not hand-edit; regenerate when the
 // curriculum content changes. Compact J13 knowledge block for the coach's
 // system prompt, kept byte-stable so Anthropic prompt caching hits.

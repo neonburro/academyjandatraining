@@ -1,5 +1,7 @@
 # J|13 Dealer Academy — Living Roadmap
 
+Last updated 2026-08-02. Phase 1 checkpoint committed as e765830.
+
 This is the working build plan. It evolves as the product does. The governing test for every
 feature comes from the Developer Context doc, page 19: does it help an employee learn the
 process, practice it, help a manager inspect it, or help the dealership measure and sustain it?
@@ -69,6 +71,9 @@ The hardest engineering in the project. Do not rush it.
 ## Standing engineering rules
 
 - JavaScript, yarn, Chakra v2, trailing-slash routes, path comment first line of every file.
+- Standard file header after the path comment: `STATUS: stable|active|stub | UPDATED: date`,
+  a dated `LOG:` of what changed and why, and `NEXT:` when the file has known upcoming work.
+  Update the header every time you touch the file. It is the on-ramp for whoever opens it next.
 - Nav hiding is cosmetic; enforcement lives in ProtectedRoute and Supabase RLS.
 - SQL ships as migration files; Tyler runs and confirms against the live project himself.
 - The coach never invents product facts, rates, approvals, legal rules or dealership policy.

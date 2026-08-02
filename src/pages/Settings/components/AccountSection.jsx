@@ -1,4 +1,7 @@
 // src/pages/Settings/components/AccountSection.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Read-only identity summary.
 
 import { VStack, HStack, Text, Box, Flex } from '@chakra-ui/react'

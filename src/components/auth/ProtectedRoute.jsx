@@ -1,4 +1,8 @@
 // src/components/auth/ProtectedRoute.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+// NEXT: Role-aware route guards (manager/admin) in Phase 2
 // Route guard. Redirects to /login/ if the user is not authenticated.
 // Renders children (or nested route via Outlet) if authenticated.
 

@@ -1,4 +1,8 @@
 // src/pages/Dashboard/components/MomentumRow.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Streak + course progress from progress store
 // Streak badge + current course progress bar. The daily-habit momentum cue and
 // a sense of progress through the active course.
 

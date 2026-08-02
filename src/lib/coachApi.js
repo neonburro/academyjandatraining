@@ -1,4 +1,8 @@
 // src/lib/coachApi.js
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: client for the coach Netlify function + local transcript store
 // Client for the coach Netlify function. Transcript persists to localStorage
 // per user so the conversation survives reloads; server persistence arrives
 // with Phase 2 (chat_sessions and chat_messages already exist in the schema).

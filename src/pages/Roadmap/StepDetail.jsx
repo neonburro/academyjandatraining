@@ -1,4 +1,9 @@
 // src/pages/Roadmap/StepDetail.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: Learn / Word Tracks / Practice / Check tabs, 80% gate, commitment flow
+// NEXT: Server-side grading + manager sign-off entry point in Phase 2
 // One step of the Roadmap. Four movements matching the J13 learning loop:
 // Learn, Word Tracks, Practice, Check. The knowledge check gates progression
 // (80 percent to pass) and finishes with the next-customer commitment, which

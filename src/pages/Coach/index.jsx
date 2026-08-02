@@ -1,4 +1,9 @@
 // src/pages/Coach/index.jsx
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  New: full-height chat, live training context, local transcript
+// NEXT: Persist transcripts to Supabase in Phase 2; coach memory feeds prompt
 // The J13 Coach chat. Full-height conversation surface, mobile-first. Talks to
 // the coach Netlify function (real Anthropic API) with the user's live
 // training context so the coach keeps them on task. Transcript persists

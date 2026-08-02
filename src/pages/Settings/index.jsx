@@ -1,4 +1,8 @@
 // src/pages/Settings/index.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-07-23  Full settings page: password, email, sessions, logout
 // Account settings. Reached from the avatar menu. Clean black theme.
 //
 // Sections:

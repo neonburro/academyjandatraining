@@ -1,4 +1,8 @@
 // src/pages/Team.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+// NEXT: Becomes manager roster with per-step status in Phase 2
 // Team progress board. Empty state for now since no team members have been
 // invited. Frames the future state clearly so Jazz sees what this becomes.
 

@@ -1,4 +1,7 @@
 // src/pages/Calendar.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Full-screen calendar. Monthly view with event chips on the dates. Click an
 // event to open a detail side panel. Stub data from src/data/seed.js for now;
 // will swap to Supabase later.

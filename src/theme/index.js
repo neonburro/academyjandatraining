@@ -1,4 +1,8 @@
 // src/theme/index.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-07-23  Ink ramp replaces blue brand; oxblood accent, pill buttons
 // Chakra UI v2 theme. Clean black-on-light system for a daily-use
 // operational tool (the J13 Dealer Academy). Black is the primary
 // (buttons, active states, key UI). Soft gray stays for helper and

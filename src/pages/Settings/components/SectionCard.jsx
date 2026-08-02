@@ -1,4 +1,7 @@
 // src/pages/Settings/components/SectionCard.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Shared shell for a settings section: title, optional description, body.
 
 import { Box, VStack, Heading, Text } from '@chakra-ui/react'

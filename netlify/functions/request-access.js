@@ -1,4 +1,7 @@
 // netlify/functions/request-access.js
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // =============================================================
 // Handles the Login "Request access" modal. The J13 Dealer Academy
 // is invite-only, so this captures a request, stores it, and

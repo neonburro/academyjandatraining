@@ -1,4 +1,7 @@
 // src/pages/Settings/components/PasswordSection.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Change password. Requires the current password, then a new one (twice).
 
 import { useState } from 'react'

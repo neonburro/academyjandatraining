@@ -1,4 +1,8 @@
 // src/pages/ResetPassword.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-07-23  Verify recovery session before enabling submit
 // Where users land from the password reset email link.
 //
 // FIX (2026-07-23): the old version set `ready = true` on an unconditional

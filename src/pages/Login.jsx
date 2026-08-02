@@ -1,4 +1,7 @@
 // src/pages/Login.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Login. Logo + DEALER ACADEMY wordmark, placeholder-only fields,
 // password visibility toggle. Forgot password opens an inline reset modal.
 //

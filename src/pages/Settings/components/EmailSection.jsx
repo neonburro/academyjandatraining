@@ -1,4 +1,7 @@
 // src/pages/Settings/components/EmailSection.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Change email. Locked by default. The user unlocks by entering their current
 // password, then can enter a new email. Supabase sends a confirmation link to
 // the new address; the change only applies after they click it.

@@ -43,3 +43,6 @@ manuals/
 
 # Claude local session settings
 .claude/
+
+# Bridge cleanup staging (files the cloud session could not delete)
+_to_delete/

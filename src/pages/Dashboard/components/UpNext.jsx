@@ -1,4 +1,7 @@
 // src/pages/Dashboard/components/UpNext.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // A peek at the coming days so the training feels like a curriculum with rhythm.
 
 import { Box, HStack, VStack, Heading, Text, Divider } from '@chakra-ui/react'

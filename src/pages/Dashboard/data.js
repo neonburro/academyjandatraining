@@ -1,4 +1,8 @@
 // src/pages/Dashboard/data.js
+// STATUS: active | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-01  Placeholder arrays removed; plan built from progress + commitments + streak
 // Builds the day's itinerary from the real curriculum and the user's actual
 // progress. No more placeholder arrays: the plan is derived from where the
 // user sits on the Roadmap, their open next-customer commitments and streak.

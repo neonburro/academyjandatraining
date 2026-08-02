@@ -1,4 +1,7 @@
 // src/pages/Dashboard/components/GreetingHeader.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
 // Time-aware greeting with the salesperson's first name and initials avatar.
 // "Good morning / afternoon / evening, Tyler." Sets the day's intention line.
 

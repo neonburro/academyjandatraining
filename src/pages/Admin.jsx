@@ -1,4 +1,8 @@
 // src/pages/Admin.jsx
+// STATUS: stub | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+// NEXT: Real admin tools arrive with Phase 2/3 (roster, sign-offs, assignments)
 // Admin placeholder for Jazz. Real admin work lives in the separate Pulse repo
 // (pulse.jandatraining.com). This page is just here as a route stub.
 

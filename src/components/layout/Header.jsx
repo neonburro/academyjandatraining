@@ -1,4 +1,8 @@
 // src/components/layout/Header.jsx
+// STATUS: stable | UPDATED: 2026-08-02
+// LOG:
+//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-07-23  Avatar menu owns Settings + Sign out on desktop
 // Top header bar. Avatar menu (top right): Account settings + Sign out.
 // Uses display_name and initials from the profile. Black avatar.
 
