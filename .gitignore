@@ -49,3 +49,6 @@ _to_delete/
 
 # Local MCP config holds the Supabase access token. Never commit.
 .mcp.json
+
+# Commercial docs. The repo is public, keep pricing out of it.
+docs/business/
