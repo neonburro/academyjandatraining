@@ -1,7 +1,10 @@
 // src/pages/Login.jsx
-// STATUS: stable | UPDATED: 2026-08-02
+// STATUS: active | UPDATED: 2026-08-02
 // LOG:
-//   2026-08-02  Header standardized; Phase 1 checkpoint committed (e765830).
+//   2026-08-02  AFIP Industry Member 2026 badge added below the sign-in card,
+//               per Jazz (industry affiliate, approved to display). Image
+//               hides itself if the asset is missing so nothing ever looks
+//               broken. Header standardized; checkpoint e765830.
 // Login. Logo + DEALER ACADEMY wordmark, placeholder-only fields,
 // password visibility toggle. Forgot password opens an inline reset modal.
 //
@@ -254,6 +257,20 @@ export default function Login() {
                 Forgot password
               </Link>
             </HStack>
+            <VStack spacing={2}>
+              <Image
+                src="/afip-industry-member-2026.png"
+                alt="AFIP Industry Member 2026"
+                boxSize="64px"
+                objectFit="contain"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none'
+                }}
+              />
+              <Text fontSize="xs" color="inkDim" textAlign="center" letterSpacing="0.02em">
+                AFIP Industry Member 2026
+              </Text>
+            </VStack>
             <Text fontSize="xs" color="inkDim" textAlign="center" fontStyle="italic">
               Built by Janda Dealer Training.
             </Text>
